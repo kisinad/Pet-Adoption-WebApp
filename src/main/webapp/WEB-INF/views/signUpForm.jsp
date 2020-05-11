@@ -64,7 +64,7 @@
         </div>
     </div>
     <div class="modal-footer d-flex justify-content-center">
-        <a href="" class="btn btn-success" data-toggle="modal" data-target="#modalSuccess" data-dismiss="modal">Sign up</a>
+        <input type="submit" value="Sign Up"  class="btn btn-success">
     </div><br>
 </form>
 </div>
