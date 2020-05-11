@@ -21,7 +21,7 @@
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <a href="./signUpForm.jsp" class="btn btn-info btn-signup">Sign Up</a>
+                <a href="/PetAdoptionWebApp/user-registration" class="btn btn-info btn-signup">Sign Up</a>
                 <a href="./loginForm.jsp" class="btn btn-primary btn-login ">Login</a>
                 <input class="form-control mr-sm-2" type="text" placeholder="Search">
                 <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
