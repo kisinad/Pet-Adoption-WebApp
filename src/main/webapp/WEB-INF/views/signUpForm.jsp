@@ -13,7 +13,7 @@
 <%@include file="../fragments/header.jsp" %>
 <div class="container jumbotron">
     <h3>Register Account</h3>
-<form method="post" id="sign-up-form" action="/user-registration">
+<form method="post" id="sign-up-form" action="${pageContext.request.contextPath}/user-registration">
     <div class="row">
         <div class="col-md-12">
             <div class="form-group">
