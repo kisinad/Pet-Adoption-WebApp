@@ -34,13 +34,16 @@ public class UserRegistrationController extends HttpServlet {
 
         try {
             userObj.registerUser(user);
+            System.out.println(user.getUserName() + ", "+ user.getUserName());
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
+            System.out.println("Error thrown........");
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
 
 //        response.sendRedirect("");
+        System.out.println("Go to DB!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/index.jsp");
         dispatcher.forward(request,response);
 //        if(result){
