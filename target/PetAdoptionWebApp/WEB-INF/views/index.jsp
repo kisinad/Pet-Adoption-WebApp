@@ -63,39 +63,7 @@
             <a href="#" class="btn btn-primary">Details</a>
         </div>
     </div>
-    <div class="flex_grid find_pet_grid flex_4x flex_borders flex_margin" id="petList">
 
-        <a href="/adopt/154250/find-a-pet/pet-detail/" class="flex_item" id="154250" name="154250">
-            <img data-src="" alt="Rexy" class="item_image lazy" src="./images/cute-puppy.jpg">
-
-            <span class="item_details">
-            <span class="item_title">Rexy</span>
-            <span class="item_description">Male   / 7 years <br>
-                ARL Main</span>
-        </span>
-        </a>
-
-        <a href="/adopt/184981/find-a-pet/pet-detail/" class="flex_item" id="184981" name="184981">
-            <img data-src="" alt="Baby" class="item_image lazy" src="./images/cute-puppy.jpg">
-
-            <span class="item_details">
-            <span class="item_title">Baby</span>
-            <span class="item_description">Female   / 10 years <br>
-                Shelter Dog Getaway</span>
-        </span>
-        </a>
-
-        <a href="/adopt/185717/find-a-pet/pet-detail/" class="flex_item" id="185717" name="185717">
-            <img data-src="" alt="Max" class="item_image lazy" src="./images/cute-puppy.jpg">
-
-            <span class="item_details">
-            <span class="item_title">Max</span>
-            <span class="item_description">Male   / 1 year <br>
-                ARL Main</span>
-        </span>
-        </a>
-
-    </div>
 </div>
 </div>
 <div class="container">
@@ -112,12 +80,12 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form method="post" id="sign-up-form">
+                <form method="post" id="sign-up-form" action="/user-registration">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label for="firstName"><i class="fas fa-user prefix grey-text"></i> *First Name:</label>
-                                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your First Name">
+                                <input required type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your First Name">
                             </div>
                         </div>
                     </div>
@@ -125,7 +93,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label for="lastName"><i class="fas fa-user prefix grey-text"></i> *Last Name:</label>
-                                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter your Last Name">
+                                <input required type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter your Last Name">
                             </div>
                         </div>
                     </div>
@@ -133,7 +101,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label for="username"><i class="fas fa-user prefix grey-text"></i> *Username:</label>
-                                <input type="text" class="form-control" id="usernameame" name="lastName" placeholder="Enter a Username">
+                                <input type="text" class="form-control" id="username" name="userName" placeholder="Enter a Username">
                             </div>
                         </div>
                     </div>
@@ -148,19 +116,50 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
-                                <label for="password"><i class="fas fa-lock prefix grey-text"></i> *Password:</label>
-                                <input type="text" class="form-control" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" id="password"
-                                       title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+                                <label for="age"><i class="fas fa-envelope prefix grey-text"></i> *Age:</label>
+                                <input required type="text" class="form-control" id="age" name="email" placeholder="Enter your Age">
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="password"><i class="fas fa-lock prefix grey-text"></i> *Password:</label>
+                                <input required type="text" class="form-control" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" id="password"
+                                       title="Must contain at least one number and one uppercase and lowercase letter, and at least 6r or more characters">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <a href="" class="btn btn-success" data-toggle="modal" data-target="#modalSuccess">Login</a>
+                        <button class="btn" type="button">Sign up</button>
+                    </div>
                 </form>
-            <div class="modal-footer d-flex justify-content-center">
-                <button class="btn btn-success">Sign up</button>
-            </div>
         </div>
     </div>
 </div>
+
+<%--    success pop-up--%>
+    <div class="modal" tabindex="-1" role="dialog" id="modalSuccess">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Success !!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Yo have successfully signed up.</p>
+                    <p>Thank You !</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <%--Login Modal--%>
     <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
@@ -178,8 +177,8 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label for="userName"><i class="fas fa-user prefix grey-text"></i> *UserName:</label>
-                                    <input type="text" class="form-control" id="userName" name="userName" placeholder="Enter your Username">
+                                    <label for="loginUserName"><i class="fas fa-user prefix grey-text"></i> *UserName:</label>
+                                    <input required type="text" class="form-control" id="loginUserName" name="loginUserName" placeholder="Enter your Username">
                                 </div>
                             </div>
                         </div>
@@ -187,7 +186,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label for="loginpassword"><i class="fas fa-lock prefix grey-text"></i> *Password:</label>
-                                    <input type="text" class="form-control" name="loginpassword" id="loginpassword">
+                                    <input required type="text" class="form-control" name="loginpassword" id="loginpassword">
                                 </div>
                             </div>
                         </div>
