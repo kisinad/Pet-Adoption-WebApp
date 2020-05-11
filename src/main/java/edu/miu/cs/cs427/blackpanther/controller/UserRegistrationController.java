@@ -18,7 +18,7 @@ public class UserRegistrationController extends HttpServlet {
     //Create a new user object
     UserRegistrationService userObj = new UserRegistrationService();
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        System.out.println("Node HIt!!!!!!");
         //Get data from form that is submitted for registration
         String firstName = request.getParameter("firstName");
         String lastName = request.getParameter("lastName");
@@ -39,8 +39,8 @@ public class UserRegistrationController extends HttpServlet {
             throwables.printStackTrace();
         }
 
-        response.sendRedirect("");
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/login.jsp");
+//        response.sendRedirect("");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/index.jsp");
         dispatcher.forward(request,response);
 //        if(result){
 //            successMessage = "<span style='color:green;'>Successfully Registered.</span><br />";
@@ -58,7 +58,7 @@ public class UserRegistrationController extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.getWriter().append("Served at: ").append(request.getContextPath());
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/login.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/signUpForm.jsp");
         dispatcher.forward(request,response);
     }
 }

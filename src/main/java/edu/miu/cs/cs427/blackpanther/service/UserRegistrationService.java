@@ -9,9 +9,14 @@ import java.sql.SQLException;
 public class UserRegistrationService {
 
     public int registerUser(User user) throws ClassNotFoundException, SQLException {
-        String INSERT_USERS_SQL = "INSERT INTO users + " +
-                " (id, firstName, lastName, username, password, age, email) VALUES" +
-                " (?,?,?,?,?,?,?);";
+        String INSERT_USERS_SQL = "INSERT INTO PetWebApp.users + " +
+                " ( firstName, lastName, userName, password, age, email) VALUES" +
+                " (?,?,?,?,?,?);";
+//        String INSERT_USERS_SQL = "INSERT INTO `PetWebApp`.`users` ( id, firstName, lastName, userName, password, age, email)" +
+//        "VALUES ("+2+","+user.getFirstName() +","+user.getLastName()+","+user.getUserName() +","+user.getPassword()+","+user.getAge()+","+user.getEmail()+");";
+        System.out.println("user.getUserName()");
+//        SELECT id, firstName, lastName, userName, password, age, email
+//        FROM `PetWebApp`.`users`;
         int result = 0;
         Class.forName("com.mysql.jdbc.Driver");
         try(Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/PetWebApp?useSSL=false", "root", "");
