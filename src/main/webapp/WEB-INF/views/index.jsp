@@ -44,17 +44,54 @@
         Aperiam consequuntur repellat a illum consectetur? Laboriosam quod quidem ipsa hic consectetur maxime, deserunt,
         accusamus ipsum natus perspiciatis doloremque enim minima expedita.
     </p>
+
+    <section id="ctl00_cph_main_content_sctMain" class="">
+        <p style="text-align: center;"><a class="menu-btn" href="javascript:void()"><i aria-hidden="true" class="fa fa-filter"></i>FILTER PETS</a></p>
+
+        <div class="toggle_filters">
+            <div class="popover_selects clearfix">
+                <div class="popover_parent popover_list">
+                    <ul class="pet_filter">
+                        <li><a href="#" class="active"><img alt="dogs" src="./images/dogs.png"><span>Dogs</span></a></li>
+                        <li><a href="#"><img alt="cats" src="./images/cats.png"><span>Cats</span></a></li>
+                        <li><a href="#"><img alt="small animals" src="./images/small.png"><span>Small Pets</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div style="background: rgb(238, 238, 238) none repeat scroll 0% 0%; border: 0px solid rgb(204, 204, 204); padding: 5px 10px; text-align: center;"><br>
+            <span class="text_green">Have a dog, cat or small pet that you'd like to register?<br>
+<a class="btn btn-clean" href="/registerPet">Register a Pet</a><br>
+&nbsp;</span></div>
+
+
+
     <p class="lead mt-5">
         <a class="btn btn-primary btn-lg" href="./register-pet" role="button">Register Pet</a>
     </p>
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="./images/cute-puppy.jpg" alt="Cute Puppy">
-        <div class="card-body">
-            <h5 class="card-title">Cute Puppy</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Details</a>
-        </div>
-    </div>
+        <ul>
+            <li>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./images/cute-puppy.jpg" alt="Cute Puppy">
+                    <div class="card-body">
+                        <h5 class="card-title">Cute Puppy</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./images/cute-puppy.jpg" alt="Cute Puppy">
+                    <div class="card-body">
+                        <h5 class="card-title">Cute Puppy</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
     <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="./images/cute-puppy.jpg" alt="Cute Puppy">
         <div class="card-body">
@@ -130,13 +167,41 @@
                             </div>
                         </div>
                     </div>
+                    <div class="modal-footer d-flex justify-content-center">
+<<<<<<< HEAD
+                        <a href="" class="btn btn-success" data-toggle="modal" data-target="#modalSuccess">Login</a>
+                        <button class="btn" type="button">Sign up</button>
+=======
+                        <a href="" class="btn btn-success" data-toggle="modal" data-target="#modalSuccess" data-dismiss="modal">Sign up</a>
+
+>>>>>>> 64f48d8f6e5edc1ccb401855a132d9cc794a32d5
+                    </div>
                 </form>
-            <div class="modal-footer d-flex justify-content-center">
-                <button class="btn btn-success">Sign up</button>
-            </div>
         </div>
     </div>
 </div>
+
+<%--    success pop-up--%>
+    <div class="modal" tabindex="-1" role="dialog" id="modalSuccess">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Success !!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Yo have successfully signed up.</p>
+                    <p>Thank You !</p>
+                </div>
+                <div class="modal-footer">
+<%--                    <button type="button" class="btn btn-primary">Save changes</button>--%>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <%--Login Modal--%>
     <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
@@ -167,10 +232,10 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <input type="submit" class="btn btn-success">Login</input>
+                        </div>
                     </form>
-                    <div class="modal-footer d-flex justify-content-center">
-                        <button class="btn btn-success">Login</button>
-                    </div>
                 </div>
             </div>
         </div>
