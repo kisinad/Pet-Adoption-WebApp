@@ -12,6 +12,7 @@
 <%-- the header fragment--%>
 <%@include file="../fragments/header.jsp" %>
 <div class="container jumbotron">
+    <h3>Register Account</h3>
 <form method="post" id="sign-up-form" action="/user-registration">
     <div class="row">
         <div class="col-md-12">
@@ -64,8 +65,7 @@
     </div>
     <div class="modal-footer d-flex justify-content-center">
         <a href="" class="btn btn-success" data-toggle="modal" data-target="#modalSuccess" data-dismiss="modal">Sign up</a>
-
-    </div>
+    </div><br>
 </form>
 </div>
 <%-- the footer fragment--%>

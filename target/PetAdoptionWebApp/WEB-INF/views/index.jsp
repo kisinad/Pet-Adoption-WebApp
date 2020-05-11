@@ -100,17 +100,6 @@
             <a href="#" class="btn btn-primary">Details</a>
         </div>
     </div>
-<<<<<<< HEAD
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="./images/cute-puppy.jpg" alt="Cute Puppy">
-        <div class="card-body">
-            <h5 class="card-title">Cute Puppy</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Details</a>
-        </div>
-    </div>
-=======
->>>>>>> 64f48d8f6e5edc1ccb401855a132d9cc794a32d5
 
 </div>
 </div>
@@ -207,11 +196,7 @@
                     <p>Thank You !</p>
                 </div>
                 <div class="modal-footer">
-<<<<<<< HEAD
-                    <button type="button" class="btn btn-primary">Save changes</button>
-=======
 <%--                    <button type="button" class="btn btn-primary">Save changes</button>--%>
->>>>>>> 64f48d8f6e5edc1ccb401855a132d9cc794a32d5
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
