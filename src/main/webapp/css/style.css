@@ -112,8 +112,11 @@ p+div, p+fieldset {
  .pet-list{
      list-style: none;
      display: inline-flex;
+<<<<<<< HEAD
  }
  .pet-list li{
 
      padding: 10px;
+=======
+>>>>>>> 63b828ebc049877807d1387dba488e8985133bf7
  }

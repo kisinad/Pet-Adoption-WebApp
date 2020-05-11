@@ -12,8 +12,8 @@
 <%-- the header fragment--%>
 <%@include file="../fragments/header.jsp" %>
 <div class="container jumbotron">
-    <h3>Register Account</h3>
-<form method="post" id="sign-up-form" action="/user-registration">
+    <h3>Register Account</h3><br>
+<form method="post" id="sign-up-form" action="/PetAdoptionWebApp/user-registration">
     <div class="row">
         <div class="col-md-12">
             <div class="form-group">
@@ -58,13 +58,13 @@
         <div class="col-md-12">
             <div class="form-group">
                 <label for="password"><i class="fas fa-lock prefix grey-text"></i> *Password:</label>
-                <input required type="text" class="form-control" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" id="password"
+                <input required type="password" class="form-control" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" id="password"
                        title="Must contain at least one number and one uppercase and lowercase letter, and at least 6r or more characters">
             </div>
         </div>
     </div>
     <div class="modal-footer d-flex justify-content-center">
-        <a href="" class="btn btn-success" data-toggle="modal" data-target="#modalSuccess" data-dismiss="modal">Sign up</a>
+        <input type="submit" value="Sign Up"  class="btn btn-success">
     </div><br>
 </form>
 </div>

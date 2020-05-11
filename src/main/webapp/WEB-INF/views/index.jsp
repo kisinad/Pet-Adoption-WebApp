@@ -22,7 +22,7 @@
             <img class="d-block w-100" src="./images/pets_big.png" alt="All Pets">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="./images/pets-png-dog-clipart.png" alt="Puppies in a box">
+            <img class="d-block w-100" src="./images/pets-elephant-dog-and-cat-transparent.png" alt="Puppies in a box">
         </div>
         <div class="carousel-item">
             <img class="d-block w-100" src="./images/pets-png-clip-art.png" alt="Cats and Dogs">
@@ -59,6 +59,7 @@
         </div>
     </div>
 
+<<<<<<< HEAD
     <div style="background: rgb(238, 238, 238) none repeat scroll 0% 0%; border: 0px solid rgb(204, 204, 204); padding: 5px 10px; text-align: center;"><br>
         <span class="text_green">Have a dog, cat or small pet that you'd like to register?<br>
 <a class="btn btn-clean" href="/registerPet">Register a Pet</a><br>
@@ -77,6 +78,27 @@
                     <h5 class="card-title">Cute Puppy</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <a href="#" class="btn btn-primary">Details</a>
+=======
+        <ul class="pet-list">
+            <li>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./images/cute-puppy.jpg" alt="Cute Puppy">
+                    <div class="card-body">
+                        <h5 class="card-title">Cute Puppy</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./images/cute-puppy.jpg" alt="Cute Puppy">
+                    <div class="card-body">
+                        <h5 class="card-title">Cute Puppy</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Details</a>
+                    </div>
+>>>>>>> 63b828ebc049877807d1387dba488e8985133bf7
                 </div>
             </div>
         </li>
@@ -88,6 +110,7 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <a href="#" class="btn btn-primary">Details</a>
                 </div>
+<<<<<<< HEAD
             </div>
         </li>
     </ul>
@@ -96,6 +119,23 @@
 
 
     </div>
+=======
+            </li>
+        </ul>
+
+        <div style="background: rgb(238, 238, 238) none repeat scroll 0% 0%; border: 0px solid rgb(204, 204, 204); padding: 5px 10px; text-align: center;"><br>
+            <span class="text_green">Have a dog, cat or small pet that you'd like to register?<br>
+<a class="btn btn-clean" href="/registerPet">Register a Pet</a><br>
+&nbsp;</span></div>
+
+
+
+        <p class="lead mt-5">
+            <a class="btn btn-primary btn-lg" href="./register-pet" role="button">Register Pet</a>
+        </p>
+</div>
+</div>
+>>>>>>> 63b828ebc049877807d1387dba488e8985133bf7
 <div class="container">
 
 <%--Sign up Modal--%>

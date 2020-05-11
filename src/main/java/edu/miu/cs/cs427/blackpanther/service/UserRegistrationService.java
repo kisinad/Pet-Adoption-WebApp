@@ -9,7 +9,7 @@ import java.sql.SQLException;
 public class UserRegistrationService {
 
     public int registerUser(User user) throws ClassNotFoundException, SQLException {
-        String INSERT_USERS_SQL = "INSERT INTO `PetWebApp`.`users` + " +
+        String INSERT_USERS_SQL = "INSERT INTO PetWebApp.users + " +
                 " ( firstName, lastName, userName, password, age, email) VALUES" +
                 " (?,?,?,?,?,?);";
 //        String INSERT_USERS_SQL = "INSERT INTO `PetWebApp`.`users` ( id, firstName, lastName, userName, password, age, email)" +
