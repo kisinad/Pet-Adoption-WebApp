@@ -109,3 +109,11 @@ p+div, p+fieldset {
  .btn-signup, .btn-login{
      margin: 10px;
  }
+ .pet-list{
+     list-style: none;
+     display: inline-flex;
+ }
+ .pet-list li{
+
+     padding: 10px;
+ }

@@ -37,31 +37,30 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
-<div class="jumbotron">
-    <h4>Pet Adoption</h4>
-    <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        Aperiam consequuntur repellat a illum consectetur? Laboriosam quod quidem ipsa hic consectetur maxime, deserunt,
-        accusamus ipsum natus perspiciatis doloremque enim minima expedita.
-    </p>
+<h4>Pet Adoption</h4>
+<p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    Aperiam consequuntur repellat a illum consectetur? Laboriosam quod quidem ipsa hic consectetur maxime, deserunt,
+    accusamus ipsum natus perspiciatis doloremque enim minima expedita.
+</p>
 
-    <section id="ctl00_cph_main_content_sctMain" class="">
-        <p style="text-align: center;"><a class="menu-btn" href="javascript:void()"><i aria-hidden="true" class="fa fa-filter"></i>FILTER PETS</a></p>
+<section id="ctl00_cph_main_content_sctMain" class="">
+    <p style="text-align: center;"><a class="menu-btn" href="javascript:void()"><i aria-hidden="true" class="fa fa-filter"></i>FILTER PETS</a></p>
 
-        <div class="toggle_filters">
-            <div class="popover_selects clearfix">
-                <div class="popover_parent popover_list">
-                    <ul class="pet_filter">
-                        <li><a href="#" class="active"><img alt="dogs" src="./images/dogs.png"><span>Dogs</span></a></li>
-                        <li><a href="#"><img alt="cats" src="./images/cats.png"><span>Cats</span></a></li>
-                        <li><a href="#"><img alt="small animals" src="./images/small.png"><span>Small Pets</span></a></li>
-                    </ul>
-                </div>
+    <div class="toggle_filters">
+        <div class="popover_selects clearfix">
+            <div class="popover_parent popover_list">
+                <ul class="pet_filter">
+                    <li><a href="#" class="active"><img alt="dogs" src="./images/dogs.png"><span>Dogs</span></a></li>
+                    <li><a href="#"><img alt="cats" src="./images/cats.png"><span>Cats</span></a></li>
+                    <li><a href="#"><img alt="small animals" src="./images/small.png"><span>Small Pets</span></a></li>
+                </ul>
             </div>
         </div>
+    </div>
 
-        <div style="background: rgb(238, 238, 238) none repeat scroll 0% 0%; border: 0px solid rgb(204, 204, 204); padding: 5px 10px; text-align: center;"><br>
-            <span class="text_green">Have a dog, cat or small pet that you'd like to register?<br>
+    <div style="background: rgb(238, 238, 238) none repeat scroll 0% 0%; border: 0px solid rgb(204, 204, 204); padding: 5px 10px; text-align: center;"><br>
+        <span class="text_green">Have a dog, cat or small pet that you'd like to register?<br>
 <a class="btn btn-clean" href="/registerPet">Register a Pet</a><br>
 &nbsp;</span></div>
 
@@ -70,53 +69,33 @@
     <p class="lead mt-5">
         <a class="btn btn-primary btn-lg" href="./register-pet" role="button">Register Pet</a>
     </p>
-        <ul>
-            <li>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="./images/cute-puppy.jpg" alt="Cute Puppy">
-                    <div class="card-body">
-                        <h5 class="card-title">Cute Puppy</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Details</a>
-                    </div>
+    <ul class="pet-list">
+        <li>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="./images/cute-puppy.jpg" alt="Cute Puppy">
+                <div class="card-body">
+                    <h5 class="card-title">Cute Puppy</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Details</a>
                 </div>
-            </li>
-            <li>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="./images/cute-puppy.jpg" alt="Cute Puppy">
-                    <div class="card-body">
-                        <h5 class="card-title">Cute Puppy</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Details</a>
-                    </div>
+            </div>
+        </li>
+        <li>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="./images/cute-puppy.jpg" alt="Cute Puppy">
+                <div class="card-body">
+                    <h5 class="card-title">Cute Puppy</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Details</a>
                 </div>
-            </li>
-        </ul>
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="./images/cute-puppy.jpg" alt="Cute Puppy">
-        <div class="card-body">
-            <h5 class="card-title">Cute Puppy</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Details</a>
-        </div>
+            </div>
+        </li>
+    </ul>
+    
     </div>
-<<<<<<< HEAD
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="./images/cute-puppy.jpg" alt="Cute Puppy">
-        <div class="card-body">
-            <h5 class="card-title">Cute Puppy</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Details</a>
-        </div>
-    </div>
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 64f48d8f6e5edc1ccb401855a132d9cc794a32d5
->>>>>>> a01fb54f41398d2abdce94bc92e64323fc164fca
 
-</div>
-</div>
+
+    </div>
 <div class="container">
 
 <%--Sign up Modal--%>
@@ -210,11 +189,7 @@
                     <p>Thank You !</p>
                 </div>
                 <div class="modal-footer">
-<<<<<<< HEAD
-                    <button type="button" class="btn btn-primary">Save changes</button>
-=======
 <%--                    <button type="button" class="btn btn-primary">Save changes</button>--%>
->>>>>>> 64f48d8f6e5edc1ccb401855a132d9cc794a32d5
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
