@@ -5,18 +5,18 @@ public class User {
     private String lastName;
     private String userName;
     private String password;
-    private Integer age;
+//    private Integer age;
     private String email;
 
     public User() {
     }
 
-    public User(String firstName, String lastName, String userName, String password, int age, String email) {
+    public User(String firstName, String lastName, String userName, String password, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.userName = userName;
         this.password = password;
-        this.age = age;
+//        this.age = age;
         this.email = email;
     }
 
@@ -52,13 +52,13 @@ public class User {
         this.password = password;
     }
 
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
+//    public int getAge() {
+//        return age;
+//    }
+//
+//    public void setAge(int age) {
+//        this.age = age;
+//    }
 
     public String getEmail() {
         return email;

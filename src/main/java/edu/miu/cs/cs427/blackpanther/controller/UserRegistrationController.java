@@ -25,22 +25,25 @@ public class UserRegistrationController extends HttpServlet {
         String lastName = request.getParameter("lastName");
         String userName = request.getParameter("userName");
         String password = request.getParameter("password");
-        Integer age = Integer.parseInt(request.getParameter("age"));
+//        Integer age = Integer.parseInt(request.getParameter("age"));
         String email = request.getParameter("email");
 
-        User user = new User(firstName, lastName, userName, password, age, email);
+        User user = new User(firstName, lastName, userName, password, email);
         request.getSession(true).setAttribute("newUser", user);
 
 
         try {
             userObj.registerUser(user);
+            System.out.println(user.getUserName() + ", "+ user.getUserName());
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
+            System.out.println("Error thrown........");
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
 
 //        response.sendRedirect("");
+        System.out.println("Go to DB!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/index.jsp");
         dispatcher.forward(request,response);
 //        if(result){
