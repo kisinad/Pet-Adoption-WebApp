@@ -130,13 +130,36 @@
                             </div>
                         </div>
                     </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <a href="" class="btn btn-success" data-toggle="modal" data-target="#modalSuccess">Login</a>
+                        <button class="btn ">Sign up</button>
+                    </div>
                 </form>
-            <div class="modal-footer d-flex justify-content-center">
-                <button class="btn btn-success">Sign up</button>
-            </div>
         </div>
     </div>
 </div>
+
+<%--    success pop-up--%>
+    <div class="modal" tabindex="-1" role="dialog" id="modalSuccess">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Success !!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Yo have successfully signed up.</p>
+                    <p>Thank You !</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <%--Login Modal--%>
     <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
