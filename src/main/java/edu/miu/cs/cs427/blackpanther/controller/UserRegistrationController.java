@@ -1,7 +1,6 @@
 package edu.miu.cs.cs427.blackpanther.controller;
 
 import edu.miu.cs.cs427.blackpanther.model.User;
-import edu.miu.cs.cs427.blackpanther.service.LoginService;
 import edu.miu.cs.cs427.blackpanther.service.UserRegistrationService;
 
 import javax.servlet.RequestDispatcher;

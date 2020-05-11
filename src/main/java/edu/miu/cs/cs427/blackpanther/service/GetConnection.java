@@ -9,7 +9,7 @@ public class GetConnection {
         Connection con = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost/PetWebApp", "root", "");
+            con = DriverManager.getConnection("jdbc:mysql://localhost/PetWebApp.users", "root", "");
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
