@@ -20,10 +20,19 @@
                     <a class="nav-link" href="./register-pet">Register Pet<span class="sr-only">(current)</span></a>
                 </li>
             </ul>
+<<<<<<< HEAD
 
                 <a href="./signup" class="btn btn-info btn-signup">Sign Up</a>
                 <a href="./login" class="btn btn-primary btn-login ">Login</a>
 
+=======
+            <form class="form-inline my-2 my-lg-0">
+                <a href="/PetAdoptionWebApp/user-registration" class="btn btn-info btn-signup">Sign Up</a>
+                <a href="./loginForm.jsp" class="btn btn-primary btn-login ">Login</a>
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+>>>>>>> fdbb73a9d0da723444173f903674b451c97e799f
         </div>
     </nav>
 </header>
