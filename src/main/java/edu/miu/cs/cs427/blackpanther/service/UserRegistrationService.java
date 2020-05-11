@@ -10,8 +10,8 @@ public class UserRegistrationService {
 
     public int registerUser(User user) throws ClassNotFoundException, SQLException {
         String INSERT_USERS_SQL = "INSERT INTO PetWebApp.users + " +
-                " ( firstName, lastName, userName, password, age, email) VALUES" +
-                " (?,?,?,?,?,?);";
+                " ( firstName, lastName, userName, password, email) VALUES" +
+                " (?,?,?,?,?);";
 //        String INSERT_USERS_SQL = "INSERT INTO `PetWebApp`.`users` ( id, firstName, lastName, userName, password, age, email)" +
 //        "VALUES ("+2+","+user.getFirstName() +","+user.getLastName()+","+user.getUserName() +","+user.getPassword()+","+user.getAge()+","+user.getEmail()+");";
         System.out.println("user.getUserName()");
@@ -27,7 +27,7 @@ public class UserRegistrationService {
             preparedStatement.setString(4, user.getUserName());
             preparedStatement.setString(5, user.getEmail());
             preparedStatement.setString(6, user.getPassword());
-            preparedStatement.setInt(7, user.getAge());
+//            preparedStatement.setInt(7, user.getAge());
             System.out.println(preparedStatement);
             result = preparedStatement.executeUpdate();
         } catch (SQLException e) {

@@ -25,10 +25,10 @@ public class UserRegistrationController extends HttpServlet {
         String lastName = request.getParameter("lastName");
         String userName = request.getParameter("userName");
         String password = request.getParameter("password");
-        Integer age = Integer.parseInt(request.getParameter("age"));
+//        Integer age = Integer.parseInt(request.getParameter("age"));
         String email = request.getParameter("email");
 
-        User user = new User(firstName, lastName, userName, password, age, email);
+        User user = new User(firstName, lastName, userName, password, email);
         request.getSession(true).setAttribute("newUser", user);
 
 
