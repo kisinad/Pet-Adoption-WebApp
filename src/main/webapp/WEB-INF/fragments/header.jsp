@@ -21,8 +21,13 @@
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
+<<<<<<< HEAD
+                <a href="/PetAdoptionWebApp/user-registration" class="btn btn-info btn-signup">Sign Up</a>
+                <a href="./loginForm.jsp" class="btn btn-primary btn-login ">Login</a>
+=======
                 <a href="./user-registration" class="btn btn-info btn-signup">Sign Up</a>
-                <a href="./user-registration" class="btn btn-primary btn-login ">Login</a>
+                <a href="./login" class="btn btn-primary btn-login ">Login</a>
+>>>>>>> 698e70b2dae2b5e84f787224a3db46312bbda2e8
                 <input class="form-control mr-sm-2" type="text" placeholder="Search">
                 <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
             </form>

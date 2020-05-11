@@ -22,10 +22,10 @@
             <img class="d-block w-100" src="./images/pets_big.png" alt="All Pets">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="./images/puppies-in-box.jpg" alt="Puppies in a box">
+            <img class="d-block w-100" src="./images/pets-png-dog-clipart.png" alt="Puppies in a box">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="./images/catDog.png" alt="Cat and Dog">
+            <img class="d-block w-100" src="./images/pets-png-clip-art.png" alt="Cats and Dogs">
         </div>
     </div>
     <a class="carousel-control-prev" href="#imagesCarousel" role="button" data-slide="prev">

@@ -65,8 +65,7 @@
     </div>
     <div class="modal-footer d-flex justify-content-center">
         <a href="" class="btn btn-success" data-toggle="modal" data-target="#modalSuccess" data-dismiss="modal">Sign up</a>
-
-    </div>
+    </div><br>
 </form>
 </div>
 <%-- the footer fragment--%>

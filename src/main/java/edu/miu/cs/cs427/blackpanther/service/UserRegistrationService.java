@@ -14,7 +14,7 @@ public class UserRegistrationService {
                 " (?,?,?,?,?,?);";
 //        String INSERT_USERS_SQL = "INSERT INTO `PetWebApp`.`users` ( id, firstName, lastName, userName, password, age, email)" +
 //        "VALUES ("+2+","+user.getFirstName() +","+user.getLastName()+","+user.getUserName() +","+user.getPassword()+","+user.getAge()+","+user.getEmail()+");";
-        System.out.println(user.getUserName());
+        System.out.println("user.getUserName()");
 //        SELECT id, firstName, lastName, userName, password, age, email
 //        FROM `PetWebApp`.`users`;
         int result = 0;
