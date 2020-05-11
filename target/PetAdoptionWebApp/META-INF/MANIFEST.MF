@@ -1,5 +1,10 @@
 Manifest-Version: 1.0
 Created-By: IntelliJ IDEA
+<<<<<<< HEAD
 Built-By: admin
 Build-Jdk: 11.0.5
+=======
+Built-By: Dell
+Build-Jdk: 14.0.1
+>>>>>>> 6ea6ac0c570ade584d95747a3b1be5be2ef0ebde
 
