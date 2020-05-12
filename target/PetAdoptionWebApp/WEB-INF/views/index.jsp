@@ -204,15 +204,15 @@
                             </div>
                         </div>
                         <div class="modal-footer d-flex justify-content-center">
-                            <<<<<<< HEAD
+                           HEAD
                             <a href="" class="btn btn-success" data-toggle="modal"
                                data-target="#modalSuccess">Login</a>
                             <button class="btn" type="button">Sign up</button>
-                            =======
+
                             <a href="" class="btn btn-success" data-toggle="modal" data-target="#modalSuccess"
                                data-dismiss="modal">Sign up</a>
 
-                            >>>>>>> 64f48d8f6e5edc1ccb401855a132d9cc794a32d5
+
                         </div>
                     </form>
                 </div>
