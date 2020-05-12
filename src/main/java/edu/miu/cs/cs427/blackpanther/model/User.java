@@ -5,7 +5,6 @@ public class User {
     private String lastName;
     private String userName;
     private String password;
-//    private Integer age;
     private String email;
 
     public User() {
@@ -16,7 +15,6 @@ public class User {
         this.lastName = lastName;
         this.userName = userName;
         this.password = password;
-//        this.age = age;
         this.email = email;
     }
 
@@ -51,14 +49,6 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
-
-//    public int getAge() {
-//        return age;
-//    }
-//
-//    public void setAge(int age) {
-//        this.age = age;
-//    }
 
     public String getEmail() {
         return email;

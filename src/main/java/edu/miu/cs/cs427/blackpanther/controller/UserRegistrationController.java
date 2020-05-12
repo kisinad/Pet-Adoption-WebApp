@@ -1,7 +1,8 @@
 package edu.miu.cs.cs427.blackpanther.controller;
 
+
+
 import edu.miu.cs.cs427.blackpanther.model.User;
-import edu.miu.cs.cs427.blackpanther.service.LoginService;
 import edu.miu.cs.cs427.blackpanther.service.UserRegistrationService;
 
 import javax.servlet.RequestDispatcher;
@@ -11,13 +12,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.sql.SQLException;
 
 @WebServlet(name = "UserRegistrationController", urlPatterns = {"/user-registration"})
 public class UserRegistrationController extends HttpServlet {
 
     //Create a new user object
     UserRegistrationService userObj = new UserRegistrationService();
+//    User user = new User();
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("Node HIt!!!!!!");
         //Get data from form that is submitted for registration
@@ -29,18 +31,11 @@ public class UserRegistrationController extends HttpServlet {
         String email = request.getParameter("email");
 
         User user = new User(firstName, lastName, userName, password, email);
-        request.getSession(true).setAttribute("newUser", user);
+//        request.getSession(true).setAttribute("newUser", user);
 
 
-        try {
-            userObj.registerUser(user);
-            System.out.println(user.getUserName() + ", "+ user.getUserName());
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-            System.out.println("Error thrown........");
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        }
+        userObj.registerUser(user);
+
 
 //        response.sendRedirect("");
         System.out.println("Go to DB!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
@@ -59,7 +54,7 @@ public class UserRegistrationController extends HttpServlet {
 
 
     }
-
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.getWriter().append("Served at: ").append(request.getContextPath());
         RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/signUpForm.jsp");

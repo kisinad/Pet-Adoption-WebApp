@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Pet-Adoption-WebApp:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9da313ac-097c-4736-9a44-b473e42573de" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Pet-Adoption-WebApp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Pet_Adoption_WebApp_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Pet_Adoption_WebApp_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_20_bin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/PetAdoptionWebApp_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/PetAdoptionWebApp_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/J2EE_1_4_J2EE_1_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_android_annotations_4_1_1_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_api_api_common_1_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_api_client_google_api_client_1_30_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_api_client_google_api_client_gson_1_30_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_api_gax_1_49_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_api_gax_grpc_1_49_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_api_gax_httpjson_0_65_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_api_grpc_proto_google_cloud_firestore_admin_v1_1_31_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_api_grpc_proto_google_cloud_firestore_v1_1_31_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_api_grpc_proto_google_cloud_firestore_v1beta1_0_84_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_api_grpc_proto_google_common_protos_1_17_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_api_grpc_proto_google_iam_v1_0_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_apis_google_api_services_storage_v1_rev20190624_1_30_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_auth_google_auth_library_credentials_0_17_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_auth_google_auth_library_oauth2_http_0_17_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_auto_value_auto_value_annotations_1_6_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_cloud_google_cloud_core_1_90_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_cloud_google_cloud_core_grpc_1_91_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_cloud_google_cloud_core_http_1_90_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_cloud_google_cloud_firestore_1_31_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_cloud_google_cloud_storage_1_91_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_firebase_firebase_admin_6_12_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_26_0_android.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_http_client_google_http_client_1_30_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_http_client_google_http_client_appengine_1_31_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_http_client_google_http_client_gson_1_30_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_http_client_google_http_client_jackson2_1_30_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_oauth_client_google_oauth_client_1_30_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_util_3_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_grpc_grpc_alts_1_23_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_grpc_grpc_api_1_23_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_grpc_grpc_auth_1_23_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_grpc_grpc_context_1_19_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_grpc_grpc_core_1_23_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_grpc_grpc_grpclb_1_23_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_grpc_grpc_netty_shaded_1_23_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_grpc_grpc_protobuf_1_23_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_grpc_grpc_protobuf_lite_1_23_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_grpc_grpc_stub_1_23_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_34_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_34_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http_4_1_34_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_34_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_34_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_34_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_34_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opencensus_opencensus_api_0_21_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opencensus_opencensus_contrib_grpc_metrics_0_21_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opencensus_opencensus_contrib_grpc_util_0_24_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opencensus_opencensus_contrib_http_util_0_21_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_perfmark_perfmark_api_0_17_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_compat_qual_2_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_threeten_threetenbp_1_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/cs/cs427/blackpanther/controller/UserRegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/cs/cs427/blackpanther/controller/UserRegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/cs/cs427/blackpanther/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/cs/cs427/blackpanther/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/cs/cs427/blackpanther/service/FirebaseInitialize.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/cs/cs427/blackpanther/service/FirebaseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/cs/cs427/blackpanther/service/UserRegistrationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/cs/cs427/blackpanther/service/UserRegistrationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PetAdoptionWebApp/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/PetAdoptionWebApp/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PetAdoptionWebApp/WEB-INF/classes/edu/miu/cs/cs427/blackpanther/controller/UserRegistrationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/PetAdoptionWebApp/WEB-INF/classes/edu/miu/cs/cs427/blackpanther/controller/UserRegistrationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PetAdoptionWebApp/WEB-INF/classes/edu/miu/cs/cs427/blackpanther/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/PetAdoptionWebApp/WEB-INF/classes/edu/miu/cs/cs427/blackpanther/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PetAdoptionWebApp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/PetAdoptionWebApp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/miu/cs/cs427/blackpanther/controller/HomePageController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/miu/cs/cs427/blackpanther/controller/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/miu/cs/cs427/blackpanther/controller/SignupController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/miu/cs/cs427/blackpanther/controller/UserRegistrationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/miu/cs/cs427/blackpanther/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/miu/cs/cs427/blackpanther/service/FirebaseInitialize.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/miu/cs/cs427/blackpanther/service/FirebaseService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/miu/cs/cs427/blackpanther/service/GetConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/miu/cs/cs427/blackpanther/service/LoginService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/miu/cs/cs427/blackpanther/service/UserRegistrationService.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="Jsp File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="1bjbSgo4Y9eMSYRuich8vhvjxZ0" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+  </component>
+  <component name="RunManager">
+    <configuration name="PetWebApp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.34" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Pet-Adoption-WebApp:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/Pet_Adoption_WebApp" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_PetAdoptionWebApp" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="50092" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="PetAdoptionWebApp:war exploded" />
+          <artifact name="Pet-Adoption-WebApp:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9da313ac-097c-4736-9a44-b473e42573de" name="Default Changelist" comment="" />
+      <created>1589148451083</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589148451083</updated>
+      <workItem from="1589148456138" duration="452000" />
+      <workItem from="1589149460524" duration="29000" />
+      <workItem from="1589149544858" duration="13327000" />
+      <workItem from="1589198925820" duration="27251000" />
+      <workItem from="1589243526217" duration="557000" />
+      <workItem from="1589244289293" duration="533000" />
+      <workItem from="1589244830220" duration="649000" />
+      <workItem from="1589245664057" duration="5281000" />
+      <workItem from="1589270730914" duration="201000" />
+      <workItem from="1589271001919" duration="44000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="723" y="386" key="#Notifications" timestamp="1589244791062">
+      <screen x="0" y="0" width="1680" height="1009" />
+    </state>
+    <state x="723" y="386" key="#Notifications/0.0.1680.1009@0.0.1680.1009" timestamp="1589244791062" />
+    <state x="304" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589246944651">
+      <screen x="0" y="0" width="1680" height="1009" />
+    </state>
+    <state x="304" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1009@0.0.1680.1009" timestamp="1589246944651" />
+    <state x="304" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1589149620798" />
+    <state x="653" y="248" key="#com.intellij.ide.util.MemberChooser" timestamp="1589161121698">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="653" y="248" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1589161121698" />
+    <state x="586" y="367" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1589246762486">
+      <screen x="0" y="0" width="1680" height="1009" />
+    </state>
+    <state x="586" y="367" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1680.1009@0.0.1680.1009" timestamp="1589246762486" />
+    <state width="1126" height="411" key="GridCell.Tab.0.bottom" timestamp="1589270688938">
+      <screen x="0" y="0" width="1680" height="1009" />
+    </state>
+    <state width="1126" height="411" key="GridCell.Tab.0.bottom/0.0.1680.1009/1680.0.1920.1080@0.0.1680.1009" timestamp="1589270688938" />
+    <state width="1030" height="251" key="GridCell.Tab.0.bottom/0.0.1680.1009/1680.0.1920.1080@1680.0.1920.1080" timestamp="1589193328668" />
+    <state width="1126" height="411" key="GridCell.Tab.0.bottom/0.0.1680.1009@0.0.1680.1009" timestamp="1589247189847" />
+    <state width="1030" height="251" key="GridCell.Tab.0.bottom/0.0.1680.1050/1680.23.1920.1057@1680.23.1920.1057" timestamp="1589198736562" />
+    <state width="1126" height="287" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1589151301720" />
+    <state width="1126" height="411" key="GridCell.Tab.0.center" timestamp="1589270688936">
+      <screen x="0" y="0" width="1680" height="1009" />
+    </state>
+    <state width="1126" height="411" key="GridCell.Tab.0.center/0.0.1680.1009/1680.0.1920.1080@0.0.1680.1009" timestamp="1589270688936" />
+    <state width="1030" height="251" key="GridCell.Tab.0.center/0.0.1680.1009/1680.0.1920.1080@1680.0.1920.1080" timestamp="1589193328665" />
+    <state width="1126" height="411" key="GridCell.Tab.0.center/0.0.1680.1009@0.0.1680.1009" timestamp="1589247189847" />
+    <state width="1030" height="251" key="GridCell.Tab.0.center/0.0.1680.1050/1680.23.1920.1057@1680.23.1920.1057" timestamp="1589198736559" />
+    <state width="1126" height="287" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1589151301717" />
+    <state width="1126" height="411" key="GridCell.Tab.0.left" timestamp="1589270688936">
+      <screen x="0" y="0" width="1680" height="1009" />
+    </state>
+    <state width="1126" height="411" key="GridCell.Tab.0.left/0.0.1680.1009/1680.0.1920.1080@0.0.1680.1009" timestamp="1589270688936" />
+    <state width="1030" height="251" key="GridCell.Tab.0.left/0.0.1680.1009/1680.0.1920.1080@1680.0.1920.1080" timestamp="1589193328663" />
+    <state width="1126" height="411" key="GridCell.Tab.0.left/0.0.1680.1009@0.0.1680.1009" timestamp="1589247189846" />
+    <state width="1030" height="251" key="GridCell.Tab.0.left/0.0.1680.1050/1680.23.1920.1057@1680.23.1920.1057" timestamp="1589198736558" />
+    <state width="1126" height="287" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1589151301712" />
+    <state width="1126" height="411" key="GridCell.Tab.0.right" timestamp="1589270688937">
+      <screen x="0" y="0" width="1680" height="1009" />
+    </state>
+    <state width="1126" height="411" key="GridCell.Tab.0.right/0.0.1680.1009/1680.0.1920.1080@0.0.1680.1009" timestamp="1589270688937" />
+    <state width="1030" height="251" key="GridCell.Tab.0.right/0.0.1680.1009/1680.0.1920.1080@1680.0.1920.1080" timestamp="1589193328667" />
+    <state width="1126" height="411" key="GridCell.Tab.0.right/0.0.1680.1009@0.0.1680.1009" timestamp="1589247189847" />
+    <state width="1030" height="251" key="GridCell.Tab.0.right/0.0.1680.1050/1680.23.1920.1057@1680.23.1920.1057" timestamp="1589198736561" />
+    <state width="1126" height="287" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1589151301719" />
+    <state width="1126" height="411" key="GridCell.Tab.1.bottom" timestamp="1589270688940">
+      <screen x="0" y="0" width="1680" height="1009" />
+    </state>
+    <state width="1126" height="411" key="GridCell.Tab.1.bottom/0.0.1680.1009/1680.0.1920.1080@0.0.1680.1009" timestamp="1589270688940" />
+    <state width="1030" height="251" key="GridCell.Tab.1.bottom/0.0.1680.1009/1680.0.1920.1080@1680.0.1920.1080" timestamp="1589193328674" />
+    <state width="1126" height="411" key="GridCell.Tab.1.bottom/0.0.1680.1009@0.0.1680.1009" timestamp="1589247189849" />
+    <state width="1030" height="251" key="GridCell.Tab.1.bottom/0.0.1680.1050/1680.23.1920.1057@1680.23.1920.1057" timestamp="1589198736569" />
+    <state width="1126" height="287" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1589151301723" />
+    <state width="1126" height="411" key="GridCell.Tab.1.center" timestamp="1589270688939">
+      <screen x="0" y="0" width="1680" height="1009" />
+    </state>
+    <state width="1126" height="411" key="GridCell.Tab.1.center/0.0.1680.1009/1680.0.1920.1080@0.0.1680.1009" timestamp="1589270688939" />
+    <state width="1030" height="251" key="GridCell.Tab.1.center/0.0.1680.1009/1680.0.1920.1080@1680.0.1920.1080" timestamp="1589193328671" />
+    <state width="1126" height="411" key="GridCell.Tab.1.center/0.0.1680.1009@0.0.1680.1009" timestamp="1589247189848" />
+    <state width="1030" height="251" key="GridCell.Tab.1.center/0.0.1680.1050/1680.23.1920.1057@1680.23.1920.1057" timestamp="1589198736565" />
+    <state width="1126" height="287" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1589151301722" />
+    <state width="1126" height="411" key="GridCell.Tab.1.left" timestamp="1589270688938">
+      <screen x="0" y="0" width="1680" height="1009" />
+    </state>
+    <state width="1126" height="411" key="GridCell.Tab.1.left/0.0.1680.1009/1680.0.1920.1080@0.0.1680.1009" timestamp="1589270688938" />
+    <state width="1030" height="251" key="GridCell.Tab.1.left/0.0.1680.1009/1680.0.1920.1080@1680.0.1920.1080" timestamp="1589193328670" />
+    <state width="1126" height="411" key="GridCell.Tab.1.left/0.0.1680.1009@0.0.1680.1009" timestamp="1589247189848" />
+    <state width="1030" height="251" key="GridCell.Tab.1.left/0.0.1680.1050/1680.23.1920.1057@1680.23.1920.1057" timestamp="1589198736564" />
+    <state width="1126" height="287" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1589151301721" />
+    <state width="1126" height="411" key="GridCell.Tab.1.right" timestamp="1589270688939">
+      <screen x="0" y="0" width="1680" height="1009" />
+    </state>
+    <state width="1126" height="411" key="GridCell.Tab.1.right/0.0.1680.1009/1680.0.1920.1080@0.0.1680.1009" timestamp="1589270688939" />
+    <state width="1030" height="251" key="GridCell.Tab.1.right/0.0.1680.1009/1680.0.1920.1080@1680.0.1920.1080" timestamp="1589193328672" />
+    <state width="1126" height="411" key="GridCell.Tab.1.right/0.0.1680.1009@0.0.1680.1009" timestamp="1589247189849" />
+    <state width="1030" height="251" key="GridCell.Tab.1.right/0.0.1680.1050/1680.23.1920.1057@1680.23.1920.1057" timestamp="1589198736567" />
+    <state width="1126" height="287" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1589151301722" />
+    <state width="1126" height="411" key="GridCell.Tab.2.bottom" timestamp="1589270688942">
+      <screen x="0" y="0" width="1680" height="1009" />
+    </state>
+    <state width="1126" height="411" key="GridCell.Tab.2.bottom/0.0.1680.1009/1680.0.1920.1080@0.0.1680.1009" timestamp="1589270688942" />
+    <state width="1030" height="251" key="GridCell.Tab.2.bottom/0.0.1680.1009/1680.0.1920.1080@1680.0.1920.1080" timestamp="1589193328680" />
+    <state width="1126" height="411" key="GridCell.Tab.2.bottom/0.0.1680.1009@0.0.1680.1009" timestamp="1589247189852" />
+    <state width="1030" height="251" key="GridCell.Tab.2.bottom/0.0.1680.1050/1680.23.1920.1057@1680.23.1920.1057" timestamp="1589198736575" />
+    <state width="1126" height="287" key="GridCell.Tab.2.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1589151301726" />
+    <state width="1126" height="411" key="GridCell.Tab.2.center" timestamp="1589270688941">
+      <screen x="0" y="0" width="1680" height="1009" />
+    </state>
+    <state width="1126" height="411" key="GridCell.Tab.2.center/0.0.1680.1009/1680.0.1920.1080@0.0.1680.1009" timestamp="1589270688941" />
+    <state width="1030" height="251" key="GridCell.Tab.2.center/0.0.1680.1009/1680.0.1920.1080@1680.0.1920.1080" timestamp="1589193328677" />
+    <state width="1126" height="411" key="GridCell.Tab.2.center/0.0.1680.1009@0.0.1680.1009" timestamp="1589247189850" />
+    <state width="1030" height="251" key="GridCell.Tab.2.center/0.0.1680.1050/1680.23.1920.1057@1680.23.1920.1057" timestamp="1589198736572" />
+    <state width="1126" height="287" key="GridCell.Tab.2.center/0.0.1680.1050@0.0.1680.1050" timestamp="1589151301724" />
+    <state width="1126" height="411" key="GridCell.Tab.2.left" timestamp="1589270688940">
+      <screen x="0" y="0" width="1680" height="1009" />
+    </state>
+    <state width="1126" height="411" key="GridCell.Tab.2.left/0.0.1680.1009/1680.0.1920.1080@0.0.1680.1009" timestamp="1589270688940" />
+    <state width="1030" height="251" key="GridCell.Tab.2.left/0.0.1680.1009/1680.0.1920.1080@1680.0.1920.1080" timestamp="1589193328675" />
+    <state width="1126" height="411" key="GridCell.Tab.2.left/0.0.1680.1009@0.0.1680.1009" timestamp="1589247189850" />
+    <state width="1030" height="251" key="GridCell.Tab.2.left/0.0.1680.1050/1680.23.1920.1057@1680.23.1920.1057" timestamp="1589198736571" />
+    <state width="1126" height="287" key="GridCell.Tab.2.left/0.0.1680.1050@0.0.1680.1050" timestamp="1589151301724" />
+    <state width="1126" height="411" key="GridCell.Tab.2.right" timestamp="1589270688942">
+      <screen x="0" y="0" width="1680" height="1009" />
+    </state>
+    <state width="1126" height="411" key="GridCell.Tab.2.right/0.0.1680.1009/1680.0.1920.1080@0.0.1680.1009" timestamp="1589270688942" />
+    <state width="1030" height="251" key="GridCell.Tab.2.right/0.0.1680.1009/1680.0.1920.1080@1680.0.1920.1080" timestamp="1589193328678" />
+    <state width="1126" height="411" key="GridCell.Tab.2.right/0.0.1680.1009@0.0.1680.1009" timestamp="1589247189851" />
+    <state width="1030" height="251" key="GridCell.Tab.2.right/0.0.1680.1050/1680.23.1920.1057@1680.23.1920.1057" timestamp="1589198736574" />
+    <state width="1126" height="287" key="GridCell.Tab.2.right/0.0.1680.1050@0.0.1680.1050" timestamp="1589151301725" />
+    <state x="378" y="180" key="Maven.ArtifactSearchDialog" timestamp="1589246169611">
+      <screen x="0" y="0" width="1680" height="1009" />
+    </state>
+    <state x="378" y="180" key="Maven.ArtifactSearchDialog/0.0.1680.1009@0.0.1680.1009" timestamp="1589246169611" />
+    <state x="378" y="187" key="Maven.ArtifactSearchDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1589157630894" />
+    <state x="341" y="143" key="SettingsEditor" timestamp="1589269491168">
+      <screen x="0" y="0" width="1680" height="1009" />
+    </state>
+    <state x="341" y="143" key="SettingsEditor/0.0.1680.1009/1680.0.1920.1080@0.0.1680.1009" timestamp="1589269491168" />
+    <state x="341" y="143" key="SettingsEditor/0.0.1680.1009@0.0.1680.1009" timestamp="1589247841206" />
+  </component>
+</project>

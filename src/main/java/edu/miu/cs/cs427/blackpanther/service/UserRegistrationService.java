@@ -1,6 +1,6 @@
 package edu.miu.cs.cs427.blackpanther.service;
 
-import edu.miu.cs.cs427.blackpanther.model.User;
+import edu.miu.cs.cs427.blackpanther.model.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -8,7 +8,7 @@ import java.sql.SQLException;
 
 public class UserRegistrationService {
 
-    public int registerUser(User user) throws ClassNotFoundException, SQLException {
+    public int registerUser(User user)  {
         System.out.println("Reached DB!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 //        String INSERT_USERS_SQL = INSERT INTO PetWebApp.users  (firstName, lastName, userName, password, email) VALUES ('Denis','Kisina','dfafdsfsdfd','kisinad@gmail.com','Password123');
         String INSERT_USERS_SQL = "INSERT INTO PetWebApp.users (firstName, lastName, userName, password, email) VALUES (?,?,?,?,?);";
@@ -18,7 +18,14 @@ public class UserRegistrationService {
 //        SELECT id, firstName, lastName, userName, password, age, email
 //        FROM `PetWebApp`.`users`;
         int result = 0;
-        Class.forName("com.mysql.jdbc.Driver");
+        //Load the driver class
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+        } catch (ClassNotFoundException ex) {
+            System.out.println("Unable to load the class. Terminating the program");
+            System.exit(-1);
+        }
+
         try(Connection connection = DriverManager.getConnection("jdbc:mysql:///PetWebApp?useSSL=false", "root", "");
             PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USERS_SQL)){
 //            preparedStatement.setInt(1,1);

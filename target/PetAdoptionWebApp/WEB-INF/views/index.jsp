@@ -22,19 +22,7 @@
             <img class="d-block w-100" src="./images/pets_big.png" alt="All Pets">
         </div>
         <div class="carousel-item">
-<<<<<<< HEAD
             <img class="d-block w-100" src="./images/pets-elephant-dog-and-cat-transparent.png" alt="Puppies in a box">
-=======
-<<<<<<< HEAD
-            <img class="d-block w-100" src="./images/pets-png-dog-clipart.png" alt="Puppies in a box">
-=======
-<<<<<<< HEAD
-            <img class="d-block w-100" src="./images/pets-elephant-dog-and-cat-transparent.png" alt="Puppies in a box">
-=======
-            <img class="d-block w-100" src="./images/pets-png-dog-clipart.png" alt="Puppies in a box">
->>>>>>> fdbb73a9d0da723444173f903674b451c97e799f
->>>>>>> 63b828ebc049877807d1387dba488e8985133bf7
->>>>>>> 6ea6ac0c570ade584d95747a3b1be5be2ef0ebde
         </div>
         <div class="carousel-item">
             <img class="d-block w-100" src="./images/pets-png-clip-art.png" alt="Cats and Dogs">
