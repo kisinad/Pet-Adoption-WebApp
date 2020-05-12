@@ -3,8 +3,17 @@ package edu.miu.cs.cs427.blackpanther.model;
 import java.util.Objects;
 
 public class LoginBeanDTO {
+    private  String firstName;
     private String userName;
     private String password;
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
 
     public String getUserName() {
         return userName;

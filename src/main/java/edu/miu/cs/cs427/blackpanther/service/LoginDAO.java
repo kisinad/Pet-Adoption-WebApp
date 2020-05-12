@@ -16,17 +16,20 @@ public class LoginDAO {//DAO
 
         String userNameDB = "";
         String passwordDB =  "";
+        String firstName = "";
 
         try {
             con = GetConnection.getConnection(); //Fetch database connection object
             statement = con.createStatement();//Statement is used to write queries.
-            resultSet = statement.executeQuery("select userName, password from PetWebAppUsers.users ");
+            resultSet = statement.executeQuery("select userName, password, firstName from PetWebAppUsers.users ");
 //            resultSet = statement.executeQuery("select userName, password from PetWebApp.users");//the table name is users and userName,password are columns. Fetching all the records and storing in a resultSet.
 
             while (resultSet.next())//Until next row is present otherwise it return false
             {
                 userName = resultSet.getString("userName");
                 passwordDB = resultSet.getString("password");
+                firstName = resultSet.getString("firstName");
+
                 LoginBeanDTO holderUserDB = new LoginBeanDTO();
                 holderUserDB.setUserName(userName);
                 holderUserDB.setPassword(passwordDB);
