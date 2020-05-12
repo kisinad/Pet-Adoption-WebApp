@@ -11,7 +11,7 @@
 </head>
 <body>
 <%-- the header fragment--%>
-<%@include file="../fragments/header.jsp" %>
+<%@include file="../fragments/homeHeader.jsp" %>
 <div id="imagesCarousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#imagesCarousel" data-slide-to="0" class="active"></li>
@@ -121,7 +121,7 @@
 <div style="background: rgb(238, 238, 238) none repeat scroll 0% 0%; border: 0px solid rgb(204, 204, 204); padding: 5px 10px; text-align: center;">
     <br>
     <span class="text_green">Have a dog, cat or small pet that you'd like to register?<br>
-                            <a class="btn btn-clean" href="/registerPet">Register a Pet</a><br>
+                            <a class="btn btn-clean" href="/register-pet">Register a Pet</a><br>
                             &nbsp;</span>
 </div>
 
@@ -131,7 +131,7 @@
 <div class="container">
 
     <%--Sign up Modal--%>
-    <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    <div class="modal fade" id="modalLogOut" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
          aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -151,8 +151,7 @@
                             </div>
                         </div>
                         <div class="modal-footer d-flex justify-content-center">
-                            <a href="" class="btn btn-alert" data-toggle="modal" data-target="#modalLogOut"
-                               data-dismiss="modal">Log out</a>
+                            <a href="" class="btn btn-alert" data-dismiss="modal">Log out</a>
                         </div>
                     </form>
                 </div>
