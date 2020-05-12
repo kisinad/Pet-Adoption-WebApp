@@ -18,16 +18,17 @@ public class PetRegistrationServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("Pet Registration hit....");
         String successMessage = "";
-        Integer animialId = Integer.parseInt(request.getParameter("animalName"));
-        String type = request.getParameter("breedName");
-        String breed = request.getParameter("breedName");
+        Integer animalId = Integer.parseInt("1");
+//        Integer animialId = Integer.parseInt(request.getParameter("animalName"));
+        String type = request.getParameter("breedType");
+//        String breed = request.getParameter("breedName");
         String sex = request.getParameter("sexName");
         String color = request.getParameter("colorName");
         String weight = request.getParameter("weightName");
         String description = request.getParameter("descriptionName");
         String date = request.getParameter("dateName");
 
-        PetDTO petDTO = new PetDTO(animialId, type, breed, sex, color, weight, description, date);
+        PetDTO petDTO = new PetDTO(animalId, type, sex, color, weight, description, date);
 
         request.getSession(true).setAttribute("newPet", petDTO);
         int writeResult = petObj.registerPet(petDTO);

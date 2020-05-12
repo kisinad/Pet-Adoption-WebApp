@@ -41,7 +41,7 @@
     </nav>
 </header>
 <div class="container jumbotron">
-    <form method="post" id="register-pet" action="/register-pet">
+    <form method="post" id="register-pet" action="/PetAdoptionWebApp/register-pet">
         <div class="row">
 
             <div class="col-md-4">
