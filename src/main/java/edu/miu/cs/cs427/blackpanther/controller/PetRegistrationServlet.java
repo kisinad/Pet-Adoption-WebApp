@@ -1,7 +1,9 @@
 package edu.miu.cs.cs427.blackpanther.controller;
 
 import edu.miu.cs.cs427.blackpanther.model.PetDTO;
+
 import edu.miu.cs.cs427.blackpanther.service.PetRegistrationService;
+
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -17,7 +19,9 @@ public class PetRegistrationServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("Pet Registration hit....");
+
         String successMessage = "";
+
         Integer animialId = Integer.parseInt(request.getParameter("animalName"));
         String type = request.getParameter("breedName");
         String breed = request.getParameter("breedName");
@@ -26,6 +30,7 @@ public class PetRegistrationServlet extends HttpServlet {
         String weight = request.getParameter("weightName");
         String description = request.getParameter("descriptionName");
         String date = request.getParameter("dateName");
+
 
         PetDTO petDTO = new PetDTO(animialId, type, breed, sex, color, weight, description, date);
 
@@ -41,6 +46,7 @@ public class PetRegistrationServlet extends HttpServlet {
             successMessage = "<span style='color:red;'>Registration Failed.</span><br />";
             request.getRequestDispatcher("WEB-INF/views/signUpForm.jsp").forward(request, response);
         }
+
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

@@ -41,28 +41,28 @@
     </nav>
 </header>
 <div class="container jumbotron">
-    <form method="post" id="register-pet" action="/register-pet">
+    <form method="post" id="register-pet" action="/PetAdoptionWebApp/register-pet">
         <div class="row">
 
             <div class="col-md-4">
                 <span class="form-group">
-                    <label for="animalName"><i class="fas fa-paw grey-text"></i> *Animal Name:</label>
-                    <input required= type="text" class="form-control" id="animalName" name="animalName"
-                           placeholder="Animal Name">
+                    <label for="animal"><i class="fas fa-paw grey-text"></i> *Pet ID:</label>
+                    <input required= type="text" class="form-control" id="animal" name="animalName"
+                           placeholder="Pet ID">
                 </span>
 
 
             </div>
             <div class="col-md-4">
                 <span class="form-group">
-                    <label for="breedId"><i class="fas fa-paw grey-text"></i> *Breed Type:</label>
-                    <input required type="text" class="form-control" id="breedId" name="breedType"
+                    <label for="breed"><i class="fas fa-paw grey-text"></i> *Breed Type:</label>
+                    <input required type="text" class="form-control" id="breed" name="breedType"
                            placeholder="Breed Type">
                 </span></div>
             <div class="col-md-4">
                 <span class="form-group">
-                    <label for="sexId"><i class="fas fa-paw grey-text"></i> *Sex:</label>
-                    <input required type="text" class="form-control" id="sexId" name="sexName"
+                    <label for="sex"><i class="fas fa-paw grey-text"></i> *Sex:</label>
+                    <input required type="text" class="form-control" id="sex" name="sexName"
                            placeholder="Sex">
                 </span></div>
 
@@ -81,7 +81,7 @@
             <div class="col-md-4">
                 <div class="form-group">
                     <label for="type"><i class="fas fa-paw prefix grey-text"></i>Pet Type:</label>
-                    <select id="type" class="form-control">>
+                    <select id="type" class="form-control" name="typeName">
                         <option value="">----Select Type----</option>
                         <option value="Dog">Dog</option>
                         <option value="Cat">Cat</option>
@@ -100,9 +100,15 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="form-group">
-                    <label for="color"><i class="fas fa-paw grey-text"></i> *color:</label>
-                    <input required="" type="color" class="form-control" id="color" name="colorName"
-                           placeholder="Breed">
+                    <input required="" type="radio" class="form-control" id="colorName" name="colorName">
+                    <label for="colorName"><i class="fas fa-paw grey-text"></i> *color:</label>
+                    <select id="color" class="form-control">>
+                        <option value="">----Select Type----</option>
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                        <option value="Grey">Grey</option>
+                        <option value="mixed">Mixed</option>
+                    </select>
                 </div>
             </div>
 
