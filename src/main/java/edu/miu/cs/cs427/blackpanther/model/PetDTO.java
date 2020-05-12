@@ -1,6 +1,7 @@
 package edu.miu.cs.cs427.blackpanther.model;
 
 public class PetDTO {
+
     private Integer petID;
     private String type;
     private String breed;
