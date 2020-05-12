@@ -22,7 +22,7 @@
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <span class="navbar-text">
-                    Welcome, Guest
+                    Welcome,<c:out value="${UserDTO.firstName}"></c:out>
                   </span>
 
                 <a href="#" class="btn btn-primary btn-login"  data-toggle="modal" data-target="#modalLogOut">Login</a>
