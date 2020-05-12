@@ -118,12 +118,12 @@
 </div>
 
 
-            <div style="background: rgb(238, 238, 238) none repeat scroll 0% 0%; border: 0px solid rgb(204, 204, 204); padding: 5px 10px; text-align: center;">
-                <br>
-                <span class="text_green">Have a dog, cat or small pet that you'd like to register?<br>
+<div style="background: rgb(238, 238, 238) none repeat scroll 0% 0%; border: 0px solid rgb(204, 204, 204); padding: 5px 10px; text-align: center;">
+    <br>
+    <span class="text_green">Have a dog, cat or small pet that you'd like to register?<br>
                             <a class="btn btn-clean" href="/registerPet">Register a Pet</a><br>
                             &nbsp;</span>
-            </div>
+</div>
 
 
 </div>
@@ -142,77 +142,17 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form method="post" id="sign-up-form" action="/userDTO-registration">
+                    <form method="post" id="logOut" action="/index">
+
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="firstName"><i class="fas fa-userDTO prefix grey-text"></i> *First
-                                        Name:</label>
-                                    <input required type="text" class="form-control" id="firstName" name="firstName"
-                                           placeholder="Enter your First Name">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="lastName"><i class="fas fa-userDTO prefix grey-text"></i> *Last
-                                        Name:</label>
-                                    <input required type="text" class="form-control" id="lastName" name="lastName"
-                                           placeholder="Enter your Last Name">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="username"><i class="fas fa-userDTO prefix grey-text"></i>
-                                        *Username:</label>
-                                    <input type="text" class="form-control" id="username" name="userName"
-                                           placeholder="Enter a Username">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="email"><i class="fas fa-envelope prefix grey-text"></i>
-                                        *Email:</label>
-                                    <input type="text" class="form-control" id="email" name="email"
-                                           placeholder="Enter your Email Address">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="age"><i class="fas fa-envelope prefix grey-text"></i> *Age:</label>
-                                    <input required type="text" class="form-control" id="age" name="email"
-                                           placeholder="Enter your Age">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="password"><i class="fas fa-lock prefix grey-text"></i>
-                                        *Password:</label>
-                                    <input required type="text" class="form-control" name="password"
-                                           pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" id="password"
-                                           title="Must contain at least one number and one uppercase and lowercase letter, and at least 6r or more characters">
-                                </div>
+                                <h4>Log Out</h4>
+                                <p>Are you sure you want to log out</p>
                             </div>
                         </div>
                         <div class="modal-footer d-flex justify-content-center">
-                            <<<<<<< HEAD
-                            <a href="" class="btn btn-success" data-toggle="modal"
-                               data-target="#modalSuccess">Login</a>
-                            <button class="btn" type="button">Sign up</button>
-                            =======
-                            <a href="" class="btn btn-success" data-toggle="modal" data-target="#modalSuccess"
-                               data-dismiss="modal">Sign up</a>
-
-                            >>>>>>> 64f48d8f6e5edc1ccb401855a132d9cc794a32d5
+                            <a href="" class="btn btn-alert" data-toggle="modal" data-target="#modalLogOut"
+                               data-dismiss="modal">Log out</a>
                         </div>
                     </form>
                 </div>
