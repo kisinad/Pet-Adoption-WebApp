@@ -47,7 +47,7 @@
             <div class="col-md-4">
                 <span class="form-group">
                     <label for="animal"><i class="fas fa-paw grey-text"></i> *Pet ID:</label>
-                    <input required= type="text" class="form-control" id="animal" name="animalName"
+                    <input readonly class="form-control" id="animal" name="animalName"
                            placeholder="Pet ID">
                 </span>
 
@@ -116,7 +116,7 @@
                 <div class="custom-file">
 
                     <label class="custom-file-label" for="customFile">Upload Images</label>
-                    <input type="file" class="custom-file-input,form-control" id="customFile">
+                    <input type="file" class="custom-file-input,form-control" id="customFile" name="imageName">
 
                 </div>
             </div>
