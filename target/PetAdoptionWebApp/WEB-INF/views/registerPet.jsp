@@ -11,14 +11,16 @@
 <body>
 <%-- the header fragment--%>
 <%@include file="../fragments/header.jsp" %>
+<p>Register Page is working</p>
 <form>
     <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        <%--@declare id="pet-detail"--%><p3>Register Pet</p3>
+        <label for="pet-Detail"> Pet Detail:</label>
+        <input type="text" class="form-control" id="Animal-Id" placeholder="Animal ID">
+
     </div>
     <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
+        <%--@declare id="type"--%><label for="type">Password</label>
         <input type="password" class="form-control" id="exampleInputPassword1">
     </div>
     <div class="form-group form-check">

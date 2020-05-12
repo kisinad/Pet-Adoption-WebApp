@@ -49,14 +49,6 @@
     <div class="row">
         <div class="col-md-12">
             <div class="form-group">
-                <label for="age"><i class="fas fa-envelope prefix grey-text"></i> *Age:</label>
-                <input required type="text" class="form-control" id="age" name="email" placeholder="Enter your Age">
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <div class="form-group">
                 <label for="password"><i class="fas fa-lock prefix grey-text"></i> *Password:</label>
                 <input required type="password" class="form-control" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" id="password"
                        title="Must contain at least one number and one uppercase and lowercase letter, and at least 6r or more characters">
