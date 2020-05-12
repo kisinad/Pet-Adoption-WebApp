@@ -23,14 +23,15 @@
             <img class="d-block w-100" src="./images/pets_big.png" alt="All Pets">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="./images/pets-elephant-dog-and-cat-transparent.png" alt="Puppies in a box">
+            <img class="d-block w-100" src="./images/AdobeStock_pets.jpeg" alt="Puppies in a box">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="./images/pets-png-clip-art.png" alt="Cats and Dogs">
+            <img class="d-block w-100" src="./images/cbd-for-pets.jpg" alt="Cats and Dogs">
         </div>
     </div>
     <a class="carousel-control-prev" href="#imagesCarousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span><img src="./images/svg/left.svg"></span>
+        <span class="carousel-control-prev-icon" datasrc="./images/svg/left.svg" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
     </a>
     <a class="carousel-control-next" href="#imagesCarousel" role="button" data-slide="next">

@@ -11,13 +11,13 @@
 <body>
 <%-- the header fragment--%>
 <%@include file="../fragments/header.jsp" %>
-<div class="container jumbotron">
-    <h3>Login</h3><br>
+<div class="container jumbotron padding-t10">
     <form method="post" id="login-form" action="/PetAdoptionWebApp/login">
 
     <div class="row">
         <div class="col-md-3"></div>
         <div class="col-md-5">
+            <h3 style="text-align: center">Login</h3><br>
             <div class="form-group">
                 <label for="loginUserName"><i class="fas fa-user prefix grey-text"></i> *UserName:</label>
                 <input required type="text" class="form-control" id="loginUserName" name="loginUserName" placeholder="Enter your Username">
