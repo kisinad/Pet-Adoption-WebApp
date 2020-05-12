@@ -2,6 +2,9 @@ package edu.miu.cs.cs427.blackpanther.controller;
 
 import edu.miu.cs.cs427.blackpanther.model.PetDTO;
 
+import edu.miu.cs.cs427.blackpanther.service.PetRegistrationService;
+
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,8 +15,13 @@ import java.io.IOException;
 
 @WebServlet(name = "PetRegistrationServlet", urlPatterns = {"/register-pet"})
 public class PetRegistrationServlet extends HttpServlet {
+    PetRegistrationService petObj = new PetRegistrationService();
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("Pet Registration hit....");
+
+        String successMessage = "";
+
         Integer animialId = Integer.parseInt(request.getParameter("animalName"));
         String type = request.getParameter("breedName");
         String breed = request.getParameter("breedName");
@@ -23,7 +31,22 @@ public class PetRegistrationServlet extends HttpServlet {
         String description = request.getParameter("descriptionName");
         String date = request.getParameter("dateName");
 
+
         PetDTO petDTO = new PetDTO(animialId, type, breed, sex, color, weight, description, date);
+
+        request.getSession(true).setAttribute("newPet", petDTO);
+        int writeResult = petObj.registerPet(petDTO);
+
+        if(writeResult == 1){
+            successMessage = "<span style='color:green;'>Pet Successfully Posted.</span><br />";
+            request.setAttribute("successMessage", successMessage);
+            request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
+        }
+        else {
+            successMessage = "<span style='color:red;'>Registration Failed.</span><br />";
+            request.getRequestDispatcher("WEB-INF/views/signUpForm.jsp").forward(request, response);
+        }
+
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
