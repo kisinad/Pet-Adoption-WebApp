@@ -33,11 +33,12 @@ public class LoginDAO {//DAO
                 holderUserDB.setUserName(userName);
                 holderUserDB.setPassword(passwordDB);
 
+
                 System.out.println("Name & Password in DB " + userName +": " + passwordDB);
 
                 if(loginBean.equals(holderUserDB) == true){
-                    System.out.println("Successfull");
-                    return "SUCCESS AUTHENTIFICATION";
+                    System.out.println("Successfully authenticated!!");
+                    return "SUCCESS AUTHENTICATION";
 
                 }
 //                if (userName.equals(userNameDB)&&password.equals(passwordDB))

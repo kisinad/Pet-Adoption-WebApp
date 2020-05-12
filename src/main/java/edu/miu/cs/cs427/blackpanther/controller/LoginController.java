@@ -31,8 +31,8 @@ public class LoginController extends HttpServlet {
 
         String userValidate = loginDao.authenticate(loginBean); //Calling authenticateUser function
 
-        if (userValidate.equals("SUCCESS AUTHENTIFICATION")){
-            System.out.println("SUccessfully logged in.....");
+        if (userValidate.equals("SUCCESS AUTHENTICATION")){
+            System.out.println("SSuccessfully logged in.....");
             request.setAttribute("userName", userName);
             request.getRequestDispatcher("/WEB-INF/views/index.jsp").forward(request, response);
         }
@@ -42,8 +42,6 @@ public class LoginController extends HttpServlet {
             request.setAttribute("errMessage", userValidate);//If authenticate() function returnsother than SUCCESS string it will be sent to Login page again. Here the error message returned from function has been stored in a errMessage key.
             request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
         }
-
-        doGet(request, response);
 
     }
 
