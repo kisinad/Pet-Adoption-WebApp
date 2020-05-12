@@ -34,8 +34,8 @@ public class UserRegistrationService {
             preparedStatement.setString(1, user.getFirstName());
             preparedStatement.setString(2, user.getLastName());
             preparedStatement.setString(3, user.getUserName());
-            preparedStatement.setString(4, user.getEmail());
-            preparedStatement.setString(5, user.getPassword());
+            preparedStatement.setString(4, user.getPassword());
+            preparedStatement.setString(5, user.getEmail());
             System.out.println(preparedStatement);
             result = preparedStatement.executeUpdate();
         } catch (SQLException e) {

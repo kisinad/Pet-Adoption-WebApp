@@ -17,10 +17,10 @@ import java.io.IOException;
 public class LoginController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        String userName = request.getParameter("userName");
-        String password = request.getParameter("password");
+        String userName = request.getParameter("loginUserName");
+        String password = request.getParameter("loginpassword");
 
-        LoginBean loginBean = new LoginBean(); //creating object for LoginBean class, which is a normal java class, contains just setters and getters. Bean classes are efficiently used in java to access user information wherever required in the application.
+        LoginBean loginBean = new LoginBean(); //creating object for LoginBean class.
 
         loginBean.setUserName(userName); //setting the username and password through the loginBean object then only you can get it in future.
         loginBean.setPassword(password);
@@ -31,14 +31,16 @@ public class LoginController extends HttpServlet {
 
         String userValidate = loginDao.authenticate(loginBean); //Calling authenticateUser function
 
-        if (userValidate.equals("SUCCESS")){
+        if (userValidate.equals("SUCCESS AUTHENTIFICATION")){
+            System.out.println("SUccessfully logged in.....");
             request.setAttribute("userName", userName);
-            request.getRequestDispatcher("/??").forward(request, response);
+            request.getRequestDispatcher("/WEB-INF/views/index.jsp").forward(request, response);
         }
         else
         {
+            System.out.println("User Name and password do not exist in db.....");
             request.setAttribute("errMessage", userValidate);//If authenticate() function returnsother than SUCCESS string it will be sent to Login page again. Here the error message returned from function has been stored in a errMessage key.
-            request.getRequestDispatcher("/login").forward(request, response);
+            request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
         }
 
         doGet(request, response);
