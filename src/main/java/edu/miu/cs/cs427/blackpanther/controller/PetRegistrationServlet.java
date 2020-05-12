@@ -1,5 +1,7 @@
 package edu.miu.cs.cs427.blackpanther.controller;
 
+import edu.miu.cs.cs427.blackpanther.model.PetDTO;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,7 +13,17 @@ import java.io.IOException;
 @WebServlet(name = "PetRegistrationServlet", urlPatterns = {"/register-pet"})
 public class PetRegistrationServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        System.out.println("Pet Registration hit....");
+        Integer animialId = Integer.parseInt(request.getParameter("animalName"));
+        String type = request.getParameter("breedName");
+        String breed = request.getParameter("breedName");
+        String sex = request.getParameter("sexName");
+        String color = request.getParameter("colorName");
+        String weight = request.getParameter("weightName");
+        String description = request.getParameter("descriptionName");
+        String date = request.getParameter("dateName");
 
+        PetDTO petDTO = new PetDTO(animialId, type, breed, sex, color, weight, description, date);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

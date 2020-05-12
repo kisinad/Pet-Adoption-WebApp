@@ -13,7 +13,7 @@ public class UserRegistrationService {
 
 //        String INSERT_USERS_SQL = "INSERT INTO PetWebApp.users (firstName, lastName, userName, password, email) VALUES (?,?,?,?,?);";
         String INSERT_USERS_SQL = "INSERT INTO PetWebAppUsers.users (firstName, lastName, userName, password, email) VALUES (?,?,?,?,?);";
-        System.out.println("user.getUserName()");
+
         int result = 0;
 
         try {
