@@ -45,7 +45,7 @@
     <p>
 
 
-        Pet adopts app. serves people and pets from across the Fairfield city.You can see and upload dog,cat and small
+        Pet adopts app serves people and pets from across the Fairfield city.You can see and upload dog,cat and small
         pets .
         you can sign up or log in  and upload pet to the website,find pet by gender, age, color, category and training
         skill.
