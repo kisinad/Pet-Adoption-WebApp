@@ -32,7 +32,7 @@ public class UserRegistrationController extends HttpServlet {
         String email = request.getParameter("email");
 
         UserDTO userDTO = new UserDTO(firstName, lastName, userName, password, email);
-        request.getSession(true).setAttribute("newUser", userDTO.getFirstName());
+        request.getSession(true).setAttribute("newUser", userDTO);
 
 
         int  writeResult = userObj.registerUser(userDTO);
