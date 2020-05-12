@@ -46,30 +46,41 @@
 
             <div class="col-md-4">
                 <span class="form-group">
-                    <label for="animalID"><i class="fas fa-paw grey-text"></i> *Animal ID:</label>
-                    <input readonly="" type="text" class="form-control" id="animalID" name="animalID" placeholder="Animal ID">
+                    <label for="animalName"><i class="fas fa-paw grey-text"></i> *Animal Name:</label>
+                    <input required= type="text" class="form-control" id="animalName" name="animalName"
+                           placeholder="Animal Name">
                 </span>
 
 
             </div>
-            <div class="col-md-4"> <span class="form-inline">
-                    <label for="animalType"><i class="fas fa-paw grey-text"></i> *Animal Type:</label>
-                    <input readonly="" type="text" class="form-control" id="animalType" name="animalType"
-                           placeholder="Animal Type">
+            <div class="col-md-4">
+                <span class="form-group">
+                    <label for="breedId"><i class="fas fa-paw grey-text"></i> *Breed Type:</label>
+                    <input required type="text" class="form-control" id="breedId" name="breedType"
+                           placeholder="Breed Type">
                 </span></div>
-            <div class="col-md-4"> <span class="form-group">
-                    <label for="animalBreed"><i class="fas fa-paw grey-text"></i> *Animal Breed:</label>
-                    <input readonly="" type="text" class="form-control" id="animalBreed" name="animalBreed"
-                           placeholder="Animal Breed">
+            <div class="col-md-4">
+                <span class="form-group">
+                    <label for="sexId"><i class="fas fa-paw grey-text"></i> *Sex:</label>
+                    <input required type="text" class="form-control" id="sexId" name="sexName"
+                           placeholder="Sex">
                 </span></div>
+
 
 
         </div>
+        <div class="col-md-4">
+                <span class="form-group">
+                    <label for="date"><i ></i> </label>
+                    <input style="visibility: hidden" type="Date" class="form-control" id="date" name="dateName"
+                           >
+                </span></div>
+
         <div class="row">
 
             <div class="col-md-4">
                 <div class="form-group">
-                    <label for="type"><i class="fas fa-paw prefix grey-text"></i> Type:</label>
+                    <label for="type"><i class="fas fa-paw prefix grey-text"></i>Pet Type:</label>
                     <select id="type" class="form-control">>
                         <option value="">----Select Type----</option>
                         <option value="Dog">Dog</option>
@@ -80,8 +91,9 @@
             </div>
             <div class="col-md-4">
                 <div class="form-group">
-                    <label for="breed"><i class="fas fa-paw grey-text"></i> *Breed:</label>
-                    <input required="" type="text" class="form-control" id="breed" name="breed" placeholder="Breed">
+                    <label for="weight"><i class="fas fa-paw grey-text"></i> *Weight:</label>
+                    <input required="" type="number" class="form-control" id="weight" name="weightName"
+                           placeholder="Weight in Kgs">
                 </div>
             </div>
         </div>
@@ -89,19 +101,17 @@
             <div class="col-md-4">
                 <div class="form-group">
                     <label for="color"><i class="fas fa-paw grey-text"></i> *color:</label>
-                    <input required="" type="color" class="form-control" id="color" name="color" placeholder="Breed">
+                    <input required="" type="color" class="form-control" id="color" name="colorName"
+                           placeholder="Breed">
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="form-group">
-                    <label for="weight"><i class="fas fa-paw grey-text"></i> *Weight:</label>
-                    <input required="" type="number" class="form-control" id="weight" name="weight" placeholder="Weight in Kgs">
-                </div>
-            </div>
+
             <div class="col-md-4">
                 <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="customFile">
-                    <label class="custom-file-label" for="customFile">Choose file</label>
+
+                    <label class="custom-file-label" for="customFile">Upload Images</label>
+                    <input type="file" class="custom-file-input,form-control" id="customFile">
+
                 </div>
             </div>
         </div>
@@ -109,12 +119,13 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="description"><i class="fas fa-paw grey-text"></i> *Description:</label>
-                    <textarea required="" rows="10" cols="80" id="description" placeholder="Short Description ..."></textarea>
+                    <textarea required="" rows="10" cols="80" name="descriptionName" id="description"
+                              placeholder="Short Description ..."></textarea>
                 </div>
             </div>
         </div>
         <div class="modal-footer d-flex justify-content-center">
-            <input type="submit" value="Sign Up" class="btn btn-success">
+            <input type="submit" value="Register your pet" class="btn btn-success">
         </div><br>
     </form>
 </div>
