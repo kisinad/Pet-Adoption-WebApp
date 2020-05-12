@@ -1,12 +1,11 @@
 package edu.miu.cs.cs427.blackpanther.controller;
 
-<<<<<<< HEAD
 import edu.miu.cs.cs427.blackpanther.model.LoginBean;
 import edu.miu.cs.cs427.blackpanther.service.LoginDAO;
 
-=======
+
 import javax.servlet.RequestDispatcher;
->>>>>>> master
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -17,7 +16,7 @@ import java.io.IOException;
 @WebServlet(name = "LoginServlet", urlPatterns = {"/login"})
 public class LoginController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-<<<<<<< HEAD
+
         String userName = request.getParameter("userName");
         String password = request.getParameter("password");
 
@@ -41,9 +40,9 @@ public class LoginController extends HttpServlet {
             request.setAttribute("errMessage", userValidate);//If authenticate() function returnsother than SUCCESS string it will be sent to Login page again. Here the error message returned from function has been stored in a errMessage key.
             request.getRequestDispatcher("/login").forward(request, response);
         }
-=======
+
         doGet(request, response);
->>>>>>> master
+
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
