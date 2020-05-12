@@ -2,10 +2,7 @@ package edu.miu.cs.cs427.blackpanther.service;
 
 import edu.miu.cs.cs427.blackpanther.model.LoginBean;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class LoginDAO {//DAO
 
@@ -23,7 +20,8 @@ public class LoginDAO {//DAO
         try {
             con = GetConnection.getConnection(); //Fetch database connection object
             statement = con.createStatement();//Statement is used to write queries.
-            resultSet = statement.executeQuery("select userName, password from PetWebApp.users");//the table name is users and userName,password are columns. Fetching all the records and storing in a resultSet.
+            resultSet = statement.executeQuery("select userName, password from PetWebAppUsers.users ");
+//            resultSet = statement.executeQuery("select userName, password from PetWebApp.users");//the table name is users and userName,password are columns. Fetching all the records and storing in a resultSet.
 
             while (resultSet.next())//Until next row is present otherwise it return false
             {

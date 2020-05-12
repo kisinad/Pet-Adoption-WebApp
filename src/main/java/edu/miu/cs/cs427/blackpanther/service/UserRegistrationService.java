@@ -10,15 +10,12 @@ public class UserRegistrationService {
 
     public int registerUser(User user)  {
         System.out.println("Reached DB!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-//        String INSERT_USERS_SQL = INSERT INTO PetWebApp.users  (firstName, lastName, userName, password, email) VALUES ('Denis','Kisina','dfafdsfsdfd','kisinad@gmail.com','Password123');
-        String INSERT_USERS_SQL = "INSERT INTO PetWebApp.users (firstName, lastName, userName, password, email) VALUES (?,?,?,?,?);";
-//        String INSERT_USERS_SQL = "INSERT INTO `PetWebApp`.`users` ( id, firstName, lastName, userName, password, age, email)" +
-//        "VALUES ("+2+","+user.getFirstName() +","+user.getLastName()+","+user.getUserName() +","+user.getPassword()+","+user.getAge()+","+user.getEmail()+");";
+
+//        String INSERT_USERS_SQL = "INSERT INTO PetWebApp.users (firstName, lastName, userName, password, email) VALUES (?,?,?,?,?);";
+        String INSERT_USERS_SQL = "INSERT INTO PetWebAppUsers.users (firstName, lastName, userName, password, email) VALUES (?,?,?,?,?);";
         System.out.println("user.getUserName()");
-//        SELECT id, firstName, lastName, userName, password, age, email
-//        FROM `PetWebApp`.`users`;
         int result = 0;
-        //Load the driver class
+
         try {
             Class.forName("com.mysql.jdbc.Driver");
         } catch (ClassNotFoundException ex) {
@@ -26,7 +23,8 @@ public class UserRegistrationService {
             System.exit(-1);
         }
 
-        try(Connection connection = DriverManager.getConnection("jdbc:mysql:///PetWebApp?useSSL=false", "root", "");
+        try(Connection connection = DriverManager.getConnection("jdbc:mysql://petadoptionwebapp.cj8knql7p2wt.us-east-2.rds.amazonaws.com:3306/PetWebAppUsers", "AWSRDS", "Password123");
+//        try(Connection connection = DriverManager.getConnection("jdbc:mysql:///PetWebApp?useSSL=false", "root", "");
 
             PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USERS_SQL)){
 
