@@ -2,7 +2,7 @@ package edu.miu.cs.cs427.blackpanther.controller;
 
 
 
-import edu.miu.cs.cs427.blackpanther.model.User;
+import edu.miu.cs.cs427.blackpanther.model.UserDTO;
 import edu.miu.cs.cs427.blackpanther.service.UserRegistrationService;
 
 import javax.servlet.RequestDispatcher;
@@ -31,11 +31,11 @@ public class UserRegistrationController extends HttpServlet {
 //        Integer age = Integer.parseInt(request.getParameter("age"));
         String email = request.getParameter("email");
 
-        User user = new User(firstName, lastName, userName, password, email);
+        UserDTO userDTO = new UserDTO(firstName, lastName, userName, password, email);
 //        request.getSession(true).setAttribute("newUser", user);
 
 
-        int  writeResult = userObj.registerUser(user);
+        int  writeResult = userObj.registerUser(userDTO);
 
 
 //        response.sendRedirect("");

@@ -1,6 +1,6 @@
 package edu.miu.cs.cs427.blackpanther.model;
 
-public class Pet {
+public class PetDTO {
     private String petID;
     private String type;
     private String breed;
@@ -10,10 +10,10 @@ public class Pet {
     private String description;
     private String image;
 
-    public Pet() {
+    public PetDTO() {
     }
 
-    public Pet(String petID, String type, String breed, String sex, String color, String weight, String description, String image) {
+    public PetDTO(String petID, String type, String breed, String sex, String color, String weight, String description, String image) {
         this.petID = petID;
         this.type = type;
         this.breed = breed;

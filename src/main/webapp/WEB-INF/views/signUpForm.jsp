@@ -13,11 +13,11 @@
 <%@include file="../fragments/header.jsp" %>
 <div class="container jumbotron">
     <h3>Register Account</h3><br>
-<form method="post" id="sign-up-form" action="/PetAdoptionWebApp/user-registration">
+<form method="post" id="sign-up-form" action="/PetAdoptionWebApp/userDTO-registration">
     <div class="row">
         <div class="col-md-12">
             <div class="form-group">
-                <label for="firstName"><i class="fas fa-user prefix grey-text"></i> *First Name:</label>
+                <label for="firstName"><i class="fas fa-userDTO prefix grey-text"></i> *First Name:</label>
                 <input required type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your First Name">
             </div>
         </div>
@@ -25,7 +25,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="form-group">
-                <label for="lastName"><i class="fas fa-user prefix grey-text"></i> *Last Name:</label>
+                <label for="lastName"><i class="fas fa-userDTO prefix grey-text"></i> *Last Name:</label>
                 <input required type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter your Last Name">
             </div>
         </div>
@@ -33,7 +33,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="form-group">
-                <label for="username"><i class="fas fa-user prefix grey-text"></i> *Username:</label>
+                <label for="username"><i class="fas fa-userDTO prefix grey-text"></i> *Username:</label>
                 <input type="text" class="form-control" id="username" name="userName" placeholder="Enter a Username">
             </div>
         </div>

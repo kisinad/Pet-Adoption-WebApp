@@ -8,7 +8,7 @@ import java.sql.SQLException;
 
 public class UserRegistrationService {
 
-    public int registerUser(User user)  {
+    public int registerUser(UserDTO userDTO)  {
         System.out.println("Reached DB!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 
 //        String INSERT_USERS_SQL = "INSERT INTO PetWebApp.users (firstName, lastName, userName, password, email) VALUES (?,?,?,?,?);";
@@ -29,11 +29,11 @@ public class UserRegistrationService {
             PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USERS_SQL)){
 
             System.out.println("Connected to the Database ....");
-            preparedStatement.setString(1, user.getFirstName());
-            preparedStatement.setString(2, user.getLastName());
-            preparedStatement.setString(3, user.getUserName());
-            preparedStatement.setString(4, user.getPassword());
-            preparedStatement.setString(5, user.getEmail());
+            preparedStatement.setString(1, userDTO.getFirstName());
+            preparedStatement.setString(2, userDTO.getLastName());
+            preparedStatement.setString(3, userDTO.getUserName());
+            preparedStatement.setString(4, userDTO.getPassword());
+            preparedStatement.setString(5, userDTO.getEmail());
             System.out.println(preparedStatement);
             result = preparedStatement.executeUpdate();
         } catch (SQLException e) {

@@ -1,16 +1,16 @@
 package edu.miu.cs.cs427.blackpanther.model;
 
-public class User {
+public class UserDTO {
     private String firstName;
     private String lastName;
     private String userName;
     private String password;
     private String email;
 
-    public User() {
+    public UserDTO() {
     }
 
-    public User(String firstName, String lastName, String userName, String password, String email) {
+    public UserDTO(String firstName, String lastName, String userName, String password, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.userName = userName;
