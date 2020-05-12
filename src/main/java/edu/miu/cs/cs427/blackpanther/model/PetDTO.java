@@ -1,7 +1,8 @@
 package edu.miu.cs.cs427.blackpanther.model;
 
 public class PetDTO {
-    private String petID;
+
+    private Integer petID;
     private String type;
     private String breed;
     private String sex;
@@ -13,7 +14,7 @@ public class PetDTO {
     public PetDTO() {
     }
 
-    public PetDTO(String petID, String type, String breed, String sex, String color, String weight, String description, String image) {
+    public PetDTO(Integer petID, String type, String breed, String sex, String color, String weight, String description, String image) {
         this.petID = petID;
         this.type = type;
         this.breed = breed;
@@ -24,11 +25,11 @@ public class PetDTO {
         this.image = image;
     }
 
-    public String getPetID() {
+    public Integer getPetID() {
         return petID;
     }
 
-    public void setPetID(String petID) {
+    public void setPetID(Integer petID) {
         this.petID = petID;
     }
 

@@ -14,6 +14,9 @@
 <div class="container jumbotron padding-t10">
     <h3>Register Account</h3><br>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8ead8602340d9e328d9c726b671d63272bafbbee
         <form method="post" id="sign-up-form" action="/PetAdoptionWebApp/user-registration">
             <div class="row">
                 <div class="col-md-6">
@@ -27,6 +30,7 @@
                     <label for="lastName"><i class="fas fa-user prefix grey-text"></i> *Last Name:</label>
                     <input required type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter your Last Name">
                 </div>
+<<<<<<< HEAD
             </div>
             </div>
             <div class="row">
@@ -66,6 +70,23 @@
                 <label for="username"><i class="fas fa-userDTO prefix grey-text"></i> *Username:</label>
                 <input type="text" class="form-control" id="username" name="userName" placeholder="Enter a Username">
 >>>>>>> 49395227e66ef0b4b418380e62205afe91069502
+=======
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="username"><i class="fas fa-user prefix grey-text"></i> *Username:</label>
+                        <input type="text" class="form-control" id="username" name="userName" placeholder="Enter a Username">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="email"><i class="fas fa-envelope prefix grey-text"></i> *Email:</label>
+                        <input type="text" class="form-control" id="email" name="email" placeholder="Enter your Email Address">
+                    </div>
+                </div>
+>>>>>>> 8ead8602340d9e328d9c726b671d63272bafbbee
             </div>
             <div class="row">
                 <div class="col-md-6">

@@ -34,7 +34,7 @@ public class LoginController extends HttpServlet {
         if (userValidate.equals("SUCCESS AUTHENTICATION")){
             System.out.println("SSuccessfully logged in.....");
             request.setAttribute("userName", userName);
-            request.getRequestDispatcher("/WEB-INF/views/index.jsp").forward(request, response);
+            request.getRequestDispatcher("/WEB-INF/views/home.jsp").forward(request, response);
         }
         else
         {

@@ -32,7 +32,7 @@ public class UserRegistrationController extends HttpServlet {
         String email = request.getParameter("email");
 
         UserDTO userDTO = new UserDTO(firstName, lastName, userName, password, email);
-//        request.getSession(true).setAttribute("newUser", user);
+        request.getSession(true).setAttribute("newUser", userDTO.getFirstName());
 
 
         int  writeResult = userObj.registerUser(userDTO);
@@ -43,7 +43,7 @@ public class UserRegistrationController extends HttpServlet {
 //        RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/index.jsp");
 //        dispatcher.forward(request,response);
         if(writeResult == 1){
-            successMessage = "<span style='color:green;'>Successfully Registered.</span><br />";
+            successMessage = "<span style='color:green;'>Successfully Registered. "+ userDTO.getFirstName() + "</span><br />";
             request.setAttribute("successMessage", successMessage);
             request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
         }
@@ -51,8 +51,6 @@ public class UserRegistrationController extends HttpServlet {
             successMessage = "<span style='color:red;'>Registration Failed.</span><br />";
             request.getRequestDispatcher("WEB-INF/views/signUpForm.jsp").forward(request, response);
         }
-
-
 
     }
     @Override
