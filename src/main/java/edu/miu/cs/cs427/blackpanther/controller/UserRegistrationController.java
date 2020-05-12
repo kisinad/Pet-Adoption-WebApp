@@ -23,6 +23,7 @@ public class UserRegistrationController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("Node HIt!!!!!!");
         //Get data from form that is submitted for registration
+        String successMessage = "";
         String firstName = request.getParameter("firstName");
         String lastName = request.getParameter("lastName");
         String userName = request.getParameter("userName");
@@ -34,22 +35,22 @@ public class UserRegistrationController extends HttpServlet {
 //        request.getSession(true).setAttribute("newUser", user);
 
 
-        userObj.registerUser(user);
+        int  writeResult = userObj.registerUser(user);
 
 
 //        response.sendRedirect("");
-        System.out.println("Go to DB!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/index.jsp");
-        dispatcher.forward(request,response);
-//        if(result){
-//            successMessage = "<span style='color:green;'>Successfully Registered.</span><br />";
-//            request.setAttribute("successMessage", successMessage);
-//            request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
-//        }
-//        else {
-//            successMessage = "<span style='color:red;'>Registration Failed.</span><br />";
-//            request.getRequestDispatcher("/login").forward(request, response);
-//        }
+        System.out.println("DB write result" + writeResult);
+//        RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/index.jsp");
+//        dispatcher.forward(request,response);
+        if(writeResult == 1){
+            successMessage = "<span style='color:green;'>Successfully Registered.</span><br />";
+            request.setAttribute("successMessage", successMessage);
+            request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
+        }
+        else {
+            successMessage = "<span style='color:red;'>Registration Failed.</span><br />";
+            request.getRequestDispatcher("WEB-INF/views/signUpForm.jsp").forward(request, response);
+        }
 
 
 

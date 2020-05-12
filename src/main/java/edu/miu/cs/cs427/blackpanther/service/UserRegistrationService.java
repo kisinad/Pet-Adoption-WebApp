@@ -27,16 +27,15 @@ public class UserRegistrationService {
         }
 
         try(Connection connection = DriverManager.getConnection("jdbc:mysql:///PetWebApp?useSSL=false", "root", "");
+
             PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USERS_SQL)){
-//            preparedStatement.setInt(1,1);
-            System.out.println("Inside Connection -yayayayayayayayayayayaya......");
+
+            System.out.println("Connected to the Database ....");
             preparedStatement.setString(1, user.getFirstName());
-            System.out.println("Inside Connection -yayayayayayayayayayayaya......" + user.getFirstName());
             preparedStatement.setString(2, user.getLastName());
             preparedStatement.setString(3, user.getUserName());
             preparedStatement.setString(4, user.getEmail());
             preparedStatement.setString(5, user.getPassword());
-//            preparedStatement.setInt(7, user.getAge());
             System.out.println(preparedStatement);
             result = preparedStatement.executeUpdate();
         } catch (SQLException e) {
