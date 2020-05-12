@@ -11,13 +11,43 @@
 <body>
 <%-- the header fragment--%>
 <%@include file="../fragments/header.jsp" %>
-<div class="container jumbotron">
+<div class="container jumbotron padding-t10">
     <h3>Register Account</h3><br>
-<form method="post" id="sign-up-form" action="/PetAdoptionWebApp/user-registration">
+<<<<<<< HEAD
+        <form method="post" id="sign-up-form" action="/PetAdoptionWebApp/user-registration">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="firstName"><i class="fas fa-user prefix grey-text"></i> *First Name:</label>
+                        <input required type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your First Name">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                <div class="form-group">
+                    <label for="lastName"><i class="fas fa-user prefix grey-text"></i> *Last Name:</label>
+                    <input required type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter your Last Name">
+                </div>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="username"><i class="fas fa-user prefix grey-text"></i> *Username:</label>
+                        <input type="text" class="form-control" id="username" name="userName" placeholder="Enter a Username">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="email"><i class="fas fa-envelope prefix grey-text"></i> *Email:</label>
+                        <input type="text" class="form-control" id="email" name="email" placeholder="Enter your Email Address">
+                    </div>
+                </div>
+=======
+<form method="post" id="sign-up-form" action="/PetAdoptionWebApp/userDTO-registration">
     <div class="row">
         <div class="col-md-12">
             <div class="form-group">
-                <label for="firstName"><i class="fas fa-user prefix grey-text"></i> *First Name:</label>
+                <label for="firstName"><i class="fas fa-userDTO prefix grey-text"></i> *First Name:</label>
                 <input required type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your First Name">
             </div>
         </div>
@@ -25,7 +55,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="form-group">
-                <label for="lastName"><i class="fas fa-user prefix grey-text"></i> *Last Name:</label>
+                <label for="lastName"><i class="fas fa-userDTO prefix grey-text"></i> *Last Name:</label>
                 <input required type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter your Last Name">
             </div>
         </div>
@@ -33,32 +63,23 @@
     <div class="row">
         <div class="col-md-12">
             <div class="form-group">
-                <label for="username"><i class="fas fa-user prefix grey-text"></i> *Username:</label>
+                <label for="username"><i class="fas fa-userDTO prefix grey-text"></i> *Username:</label>
                 <input type="text" class="form-control" id="username" name="userName" placeholder="Enter a Username">
+>>>>>>> 49395227e66ef0b4b418380e62205afe91069502
             </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <div class="form-group">
-                <label for="email"><i class="fas fa-envelope prefix grey-text"></i> *Email:</label>
-                <input type="text" class="form-control" id="email" name="email" placeholder="Enter your Email Address">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="password"><i class="fas fa-lock prefix grey-text"></i> *Password:</label>
+                        <input required type="password" class="form-control" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" id="password"
+                               title="Must contain at least one number and one uppercase and lowercase letter, and at least 6r or more characters">
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <div class="form-group">
-                <label for="password"><i class="fas fa-lock prefix grey-text"></i> *Password:</label>
-                <input required type="password" class="form-control" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" id="password"
-                       title="Must contain at least one number and one uppercase and lowercase letter, and at least 6r or more characters">
-            </div>
-        </div>
-    </div>
-    <div class="modal-footer d-flex justify-content-center">
-        <input type="submit" value="Sign Up"  class="btn btn-success">
-    </div><br>
-</form>
+            <div class="modal-footer d-flex justify-content-center">
+                <input type="submit" value="Sign Up"  class="btn btn-success">
+            </div><br>
+        </form>
 </div>
 <%-- the footer fragment--%>
 <%@include file="../fragments/footer.jsp" %>

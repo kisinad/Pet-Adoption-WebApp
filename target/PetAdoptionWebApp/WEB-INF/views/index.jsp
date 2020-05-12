@@ -23,19 +23,14 @@
             <img class="d-block w-100" src="./images/pets_big.png" alt="All Pets">
         </div>
         <div class="carousel-item">
-<<<<<<< HEAD
-            <img class="d-block w-100" src="./images/pets-elephant-dog-and-cat-transparent.png" alt="Puppies in a box">
-=======
             <img class="d-block w-100" src="./images/AdobeStock_pets.jpeg" alt="Puppies in a box">
->>>>>>> origin
         </div>
         <div class="carousel-item">
             <img class="d-block w-100" src="./images/cbd-for-pets.jpg" alt="Cats and Dogs">
         </div>
     </div>
     <a class="carousel-control-prev" href="#imagesCarousel" role="button" data-slide="prev">
-        <span><img src="./images/svg/left.svg"></span>
-        <span class="carousel-control-prev-icon" datasrc="./images/svg/left.svg" aria-hidden="true"></span>
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
     </a>
     <a class="carousel-control-next" href="#imagesCarousel" role="button" data-slide="next">
@@ -147,11 +142,11 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form method="post" id="sign-up-form" action="/user-registration">
+                    <form method="post" id="sign-up-form" action="/userDTO-registration">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label for="firstName"><i class="fas fa-user prefix grey-text"></i> *First
+                                    <label for="firstName"><i class="fas fa-userDTO prefix grey-text"></i> *First
                                         Name:</label>
                                     <input required type="text" class="form-control" id="firstName" name="firstName"
                                            placeholder="Enter your First Name">
@@ -161,7 +156,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label for="lastName"><i class="fas fa-user prefix grey-text"></i> *Last
+                                    <label for="lastName"><i class="fas fa-userDTO prefix grey-text"></i> *Last
                                         Name:</label>
                                     <input required type="text" class="form-control" id="lastName" name="lastName"
                                            placeholder="Enter your Last Name">
@@ -171,7 +166,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label for="username"><i class="fas fa-user prefix grey-text"></i>
+                                    <label for="username"><i class="fas fa-userDTO prefix grey-text"></i>
                                         *Username:</label>
                                     <input type="text" class="form-control" id="username" name="userName"
                                            placeholder="Enter a Username">
@@ -262,7 +257,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="loginUserName"><i class="fas fa-user prefix grey-text"></i>
+                                        <label for="loginUserName"><i class="fas fa-userDTO prefix grey-text"></i>
                                             *UserName:</label>
                                         <input required type="text" class="form-control" id="loginUserName"
                                                name="loginUserName" placeholder="Enter your Username">
