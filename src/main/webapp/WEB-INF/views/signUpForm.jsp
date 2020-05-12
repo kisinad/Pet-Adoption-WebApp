@@ -13,7 +13,6 @@
 <%@include file="../fragments/header.jsp" %>
 <div class="container jumbotron padding-t10">
     <h3>Register Account</h3><br>
-<<<<<<< HEAD
         <form method="post" id="sign-up-form" action="/PetAdoptionWebApp/user-registration">
             <div class="row">
                 <div class="col-md-6">
@@ -42,30 +41,6 @@
                         <input type="text" class="form-control" id="email" name="email" placeholder="Enter your Email Address">
                     </div>
                 </div>
-=======
-<form method="post" id="sign-up-form" action="/PetAdoptionWebApp/userDTO-registration">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="form-group">
-                <label for="firstName"><i class="fas fa-userDTO prefix grey-text"></i> *First Name:</label>
-                <input required type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your First Name">
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <div class="form-group">
-                <label for="lastName"><i class="fas fa-userDTO prefix grey-text"></i> *Last Name:</label>
-                <input required type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter your Last Name">
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <div class="form-group">
-                <label for="username"><i class="fas fa-userDTO prefix grey-text"></i> *Username:</label>
-                <input type="text" class="form-control" id="username" name="userName" placeholder="Enter a Username">
->>>>>>> 49395227e66ef0b4b418380e62205afe91069502
             </div>
             <div class="row">
                 <div class="col-md-6">
