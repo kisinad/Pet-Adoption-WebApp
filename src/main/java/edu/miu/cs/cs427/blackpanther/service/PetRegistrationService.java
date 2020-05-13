@@ -11,7 +11,7 @@ public class PetRegistrationService {
 
     public int registerPet(PetDTO petDTO) {
         System.out.println("Starting the registration of Pet....");
-        String INSERT_USERS_SQL = "INSERT INTO PetWebAppUsers.pets (animal, breed, sex, color, description, date, weight) VALUES (?,?,?,?,?,?,?);";
+        String INSERT_USERS_SQL = "INSERT INTO PetWebAppUsers.pets (idpet, type, breed, sex,color,weight, description, image, date) VALUES (?,?,?,?,?,?,?,?,?);";
 
         int result = 0;
 
