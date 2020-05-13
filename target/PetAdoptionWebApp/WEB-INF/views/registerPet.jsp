@@ -60,30 +60,11 @@
                            placeholder="Breed Type">
                 </span></div>
             <div class="col-md-4">
-                <div class="form-group">
-                    <label ><i class="fas fa-paw grey-text"></i> Gender</label>
-                    </div>
-
-                <div class="col-md-4">
                 <span class="form-group">
-                    <label for="date"><i ></i> </label>
-                    <input style="visibility: hidden" type="Date" class="form-control" id="date" name="dateName"
-                           value="LocalDate.now().format(DateTimeFormatter.ofPattern((EEEE, dd MMMM yyyy))">
-                </span>
-                </div>
-<%--                    <input required type="text" class="form-control" id="sex" name="sexName"--%>
-<%--                           placeholder="Sex">-
-
-
-
-                <div>
-                    <input type="radio" id="male" name="sexName" value="male">
-                    <label for="male">Male</label>
-                    <input type="radio" id="female" name="sexName" value="female">
-                    <label for="female">Female</label>
-                </div>
-
-                </div>
+                    <label for="sex"><i class="fas fa-paw grey-text"></i> *Sex:</label>
+                    <input required type="text" class="form-control" id="sex" name="sexName"
+                           placeholder="Sex">
+                </span></div>
 
 
 
