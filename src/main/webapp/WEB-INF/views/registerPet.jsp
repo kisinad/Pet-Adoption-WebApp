@@ -47,7 +47,7 @@
             <div class="col-md-4">
                 <span class="form-group">
                     <label for="animal"><i class="fas fa-paw grey-text"></i> *Pet ID:</label>
-                    <input readonly class="form-control" id="animal" name="animalName"
+                    <input readonly type="number" class="form-control" id="animal" name="animalName"
                            placeholder="Pet ID">
                 </span>
 
@@ -100,9 +100,9 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="form-group">
-                    <input required="" type="radio" class="form-control" id="colorName" name="colorName">
-                    <label for="colorName"><i class="fas fa-paw grey-text"></i> *color:</label>
-                    <select id="color" class="form-control">>
+<%--                    <input required="" type="radio" class="form-control" id="colorName" name="colorName">--%>
+                    <label for="color"><i class="fas fa-paw grey-text"></i> *color:</label>
+                    <select id="color" class="form-control" name="colorName">
                         <option value="">----Select Type----</option>
                         <option value="Black">Black</option>
                         <option value="White">White</option>
