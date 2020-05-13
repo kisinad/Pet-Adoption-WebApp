@@ -21,29 +21,26 @@ public class PetRegistrationServlet extends HttpServlet {
         System.out.println("Pet Registration hit....");
 
         String successMessage = "";
-<<<<<<< HEAD
+
         Integer animalId = Integer.parseInt("1");
 //        Integer animialId = Integer.parseInt(request.getParameter("animalName"));
-        String type = request.getParameter("breedType");
+        String breedType = request.getParameter("breedType");
 //        String breed = request.getParameter("breedName");
-=======
+
 
         Integer animialId = Integer.parseInt(request.getParameter("animalName"));
         String type = request.getParameter("breedName");
         String breed = request.getParameter("breedName");
->>>>>>> f84e3907b27dab553c3e7c0dd74e02e8c776eab9
+
         String sex = request.getParameter("sexName");
         String color = request.getParameter("colorName");
         String weight = request.getParameter("weightName");
         String description = request.getParameter("descriptionName");
         String date = request.getParameter("dateName");
 
-<<<<<<< HEAD
-        PetDTO petDTO = new PetDTO(animalId, type, sex, color, weight, description, date);
-=======
 
-        PetDTO petDTO = new PetDTO(animialId, type, breed, sex, color, weight, description, date);
->>>>>>> f84e3907b27dab553c3e7c0dd74e02e8c776eab9
+        PetDTO petDTO = new PetDTO(animalId, type, sex, color, weight, description, date);
+
 
         request.getSession(true).setAttribute("newPet", petDTO);
         int writeResult = petObj.registerPet(petDTO);
