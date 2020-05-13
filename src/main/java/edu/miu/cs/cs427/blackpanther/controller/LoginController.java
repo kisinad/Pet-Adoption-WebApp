@@ -33,7 +33,7 @@ public class LoginController extends HttpServlet {
 
         if (userValidate.equals("SUCCESS AUTHENTICATION")){
             System.out.println("SSuccessfully logged in.....");
-            request.setAttribute("firstNameUser", userName);
+            request.setAttribute("firstNameUser", loginDao); // replaced userName
             System.out.println("logged in....." + userName);
             request.getRequestDispatcher("/WEB-INF/views/home.jsp").forward(request, response);
         }

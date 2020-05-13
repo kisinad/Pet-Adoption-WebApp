@@ -12,6 +12,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 @WebServlet(name = "UserRegistrationController", urlPatterns = {"/user-registration"})
 public class UserRegistrationController extends HttpServlet {
@@ -32,12 +34,37 @@ public class UserRegistrationController extends HttpServlet {
         String email = request.getParameter("email");
 
         UserDTO userDTO = new UserDTO(firstName, lastName, userName, password, email);
-        request.getSession(true).setAttribute("newUser", userDTO.getFirstName());
+        request.getSession(true).setAttribute("newUser", userDTO); //removed .getFirstName()
 
+
+
+        //Ian's code
+        List<String> errors = new ArrayList<String>();
+        if (firstName != null && firstName.equals("")) {
+            errors.add("Please add a first name");
+        }
+        if (lastName != null && lastName.equals("")) {
+            errors.add("Please add a last name");
+        }
+        if (userName != null && userName.equals("")) {
+            errors.add("Please select userName");
+        }
+        if (email != null && email.equals("")) {
+            errors.add("Please add a message");
+        }
+        if (password != null && password.equals("")) {
+            errors.add("Please select a password");
+        }
+        if (errors.size() > 0) {
+            System.out.println("errors ......" + errors);
+            request.setAttribute("errors", errors);
+            request.getRequestDispatcher("/WEB-INF/views/signUpForm.jsp").forward(request, response);
+
+        } else {
+            request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
+        }
 
         int  writeResult = userObj.registerUser(userDTO);
-
-
 //        response.sendRedirect("");
         System.out.println("DB write result" + writeResult);
 //        RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/index.jsp");

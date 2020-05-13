@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +15,9 @@
 <div class="container jumbotron padding-t10">
     <h3>Register Account</h3><br>
         <form method="post" id="sign-up-form" action="/PetAdoptionWebApp/user-registration">
+
+                <p id="errors"><c:out value="${successMessage}"></c:out></p>
+
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
