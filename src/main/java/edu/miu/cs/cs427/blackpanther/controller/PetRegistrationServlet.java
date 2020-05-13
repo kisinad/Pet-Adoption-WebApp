@@ -22,24 +22,19 @@ public class PetRegistrationServlet extends HttpServlet {
 
         String successMessage = "";
 
-        Integer animalId = Integer.parseInt("1");
-//        Integer animialId = Integer.parseInt(request.getParameter("animalName"));
+//        Integer petId = Integer.parseInt("1");
+        Integer petId = Integer.parseInt(request.getParameter("animalName"));
         String breedType = request.getParameter("breedType");
-//        String breed = request.getParameter("breedName");
-
-
-        Integer animialId = Integer.parseInt(request.getParameter("animalName"));
-        String type = request.getParameter("breedName");
-        String breed = request.getParameter("breedName");
-
         String sex = request.getParameter("sexName");
         String color = request.getParameter("colorName");
+        String type = request.getParameter("typeName");
         String weight = request.getParameter("weightName");
+        String image = request.getParameter("imageName");
         String description = request.getParameter("descriptionName");
         String date = request.getParameter("dateName");
 
 
-        PetDTO petDTO = new PetDTO(animalId, type, sex, color, weight, description, date);
+        PetDTO petDTO = new PetDTO(petId, breedType, sex, color,type, weight, image, description, date);
 
 
         request.getSession(true).setAttribute("newPet", petDTO);
