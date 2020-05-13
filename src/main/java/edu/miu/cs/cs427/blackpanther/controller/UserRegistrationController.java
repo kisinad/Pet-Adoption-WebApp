@@ -61,6 +61,7 @@ public class UserRegistrationController extends HttpServlet {
 
         } else {
             successMessage = "<span style='color:green;'>Successfully Registered. "+ userDTO.getFirstName() + "</span><br />";
+            request.setAttribute("success", successMessage);
             request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
         }
 

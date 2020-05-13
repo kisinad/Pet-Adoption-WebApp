@@ -16,7 +16,13 @@
     <h3>Register Account</h3><br>
         <form method="post" id="sign-up-form" action="/PetAdoptionWebApp/user-registration">
 
-                <p id="errors"><c:out value="${successMessage}"></c:out></p>
+            <c:forEach var="errorData" items="${errors}" varStatus="iteration">
+                <p style="color: #ff0000"><c:out value="${errorData}"></c:out></p>
+            </c:forEach>
+
+            <div class="alert alert-success" role="alert">
+                <c:out value="${success}"></c:out>
+            </div>
 
             <div class="row">
                 <div class="col-md-6">

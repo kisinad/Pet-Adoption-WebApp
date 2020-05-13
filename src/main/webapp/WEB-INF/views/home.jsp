@@ -153,7 +153,7 @@
                             </div>
                         </div>
                         <div class="modal-footer d-flex justify-content-center">
-                            <a href="" class="btn btn-alert" data-dismiss="modal">Log out</a>
+                            <a href="/index" class="btn btn-alert" data-dismiss="modal">Log out</a>
                         </div>
                     </form>
                 </div>
