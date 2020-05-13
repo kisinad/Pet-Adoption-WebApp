@@ -32,20 +32,18 @@ public class LoginController extends HttpServlet {
         String userValidate = loginDao.authenticate(loginBeanDTO); //Calling authenticateUser function
 
         if (userValidate.equals("SUCCESS AUTHENTICATION")){
-<<<<<<< HEAD
             System.out.println("SSuccessfully logged in.....");
             request.setAttribute("firstNameUser", loginDao); // replaced userName
-=======
+
             System.out.println("Successfully logged in.....");
             request.setAttribute("firstNameUser", userName);
->>>>>>> 2bf0fd5ba6a892fd0746f21c38c1a37927eff99a
             System.out.println("logged in....." + userName);
             request.getRequestDispatcher("/WEB-INF/views/home.jsp").forward(request, response);
         }
         else
         {
             System.out.println("User Name and password do not exist in db.....");
-            request.setAttribute("errMessage", userValidate);//If authenticate() function returnsother than SUCCESS string it will be sent to Login page again. Here the error message returned from function has been stored in a errMessage key.
+            request.setAttribute("errMessage", userValidate);//If authenticate() function returns other than SUCCESS string it will be sent to Login page again. Here the error message returned from function has been stored in a errMessage key.
             request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
         }
 

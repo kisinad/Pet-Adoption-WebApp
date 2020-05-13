@@ -36,8 +36,6 @@ public class UserRegistrationController extends HttpServlet {
         UserDTO userDTO = new UserDTO(firstName, lastName, userName, password, email);
         request.getSession(true).setAttribute("newUser", userDTO); //removed .getFirstName()
 
-        request.getSession(true).setAttribute("newUser", userDTO);
-
 
         //Ian's code
         List<String> errors = new ArrayList<String>();
