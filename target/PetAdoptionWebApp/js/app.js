@@ -123,7 +123,7 @@ function fetchAllPets() {
 };
 
 function addPet() {
-    let animalID = 0;
+    let animalID = 1;
     $("#register-pet").submit(event => {
         event.preventDefault();
         let animalName = $("#animalName");
@@ -139,7 +139,7 @@ function addPet() {
         let petCreateError = $("#petCreateError");
 
         const newpet = {
-            "animalName": animalID++,
+            "animalName": animalID,
             "type": type.val(),
             "customFile": customFile.val(),
             "breed": breed.val(),
@@ -149,7 +149,7 @@ function addPet() {
             "description": description.val(),
             "date": date.val()
         }
-
+        animalID++;
         fetch('https://elibraryrestapi.herokuapp.com/elibrary/api/pet/add', {
             method: 'POST',
             body: JSON.stringify(newpet),

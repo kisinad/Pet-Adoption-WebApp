@@ -23,8 +23,7 @@
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <span class="navbar-text">
-                    Welcome, <c:out value="${newUser.firstName}"></c:out>, <c:out value="${firstNameUser.firstName}"></c:out>
-                    <c:out value="${firstNameUser.userName}"></c:out>
+                    Welcome, <c:out value="${firstNameUser}"></c:out>, <c:out value="${'firstNameUser'}"></c:out>
                   </span>
                 <span class="nav-item"><a class="nav-link" id="clock" href="#"></a></span>
                 <a href="#" class="btn btn-primary btn-login"  data-toggle="modal" data-target="#modalLogOut">Log out</a>
