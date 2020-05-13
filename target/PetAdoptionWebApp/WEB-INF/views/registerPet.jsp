@@ -47,7 +47,7 @@
             <div class="col-md-4">
                 <span class="form-group">
                     <label for="animal"><i class="fas fa-paw grey-text"></i> *Pet ID:</label>
-                    <input readonly class="form-control" id="animal" name="animalName"
+                    <input readonly type="number" class="form-control" id="animal" name="animalName"
                            placeholder="Pet ID">
                 </span>
 

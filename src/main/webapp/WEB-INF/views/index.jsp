@@ -76,9 +76,9 @@
         <p class="lead mt-5">
             Find Pet
         </p>
-        <ul class="pet-list">
+        <ul class="pet-list" id="pet-body">
             <li>
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <img class="card-img-top" src="./images/cute-puppy.jpg" alt="Cute Puppy">
                     <div class="card-body">
                         <h5 class="card-title">Cute Puppy</h5>

@@ -21,29 +21,24 @@ public class PetRegistrationServlet extends HttpServlet {
         System.out.println("Pet Registration hit....");
 
         String successMessage = "";
-<<<<<<< HEAD
-        Integer animalId = Integer.parseInt("1");
-//        Integer animialId = Integer.parseInt(request.getParameter("animalName"));
-        String type = request.getParameter("breedType");
-//        String breed = request.getParameter("breedName");
-=======
-
-        Integer animialId = Integer.parseInt(request.getParameter("animalName"));
-        String type = request.getParameter("breedName");
-        String breed = request.getParameter("breedName");
->>>>>>> f84e3907b27dab553c3e7c0dd74e02e8c776eab9
+        System.out.println("About to reach what was  that is this ...." );
+        Integer petId = Integer.parseInt("1");
+//        Integer petId = Integer.parseInt(request.getParameter("animalName"));
+        System.out.println("What is this ...." +petId);
+        String breedType = request.getParameter("breedType");
         String sex = request.getParameter("sexName");
         String color = request.getParameter("colorName");
+        String type = request.getParameter("typeName");
         String weight = request.getParameter("weightName");
+        String image = request.getParameter("imageName");
         String description = request.getParameter("descriptionName");
-        String date = request.getParameter("dateName");
+//        String date = request.getParameter("dateName");
+        String date = request.getParameter("5-12-2020");
 
-<<<<<<< HEAD
-        PetDTO petDTO = new PetDTO(animalId, type, sex, color, weight, description, date);
-=======
 
-        PetDTO petDTO = new PetDTO(animialId, type, breed, sex, color, weight, description, date);
->>>>>>> f84e3907b27dab553c3e7c0dd74e02e8c776eab9
+
+        PetDTO petDTO = new PetDTO(petId, breedType, sex, color,type, weight, image, description, date);
+
 
         request.getSession(true).setAttribute("newPet", petDTO);
         int writeResult = petObj.registerPet(petDTO);

@@ -12,18 +12,10 @@ public class PetDTO {
     private String image;
     private String date;
 
-    public String getDate() {
-        return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
-    }
-
     public PetDTO() {
     }
 
-    public PetDTO(Integer petID, String type, String breed, String sex, String color, String weight, String description, String image) {
+    public PetDTO(Integer petID, String type, String breed, String sex, String color, String weight, String description, String image, String date) {
         this.petID = petID;
         this.type = type;
         this.breed = breed;
@@ -32,6 +24,7 @@ public class PetDTO {
         this.weight = weight;
         this.description = description;
         this.image = image;
+        this.date = date;
     }
 
     public Integer getPetID() {
@@ -96,5 +89,13 @@ public class PetDTO {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
     }
 }
