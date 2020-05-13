@@ -43,12 +43,13 @@
     <br>
     <h4>Pet Adoption</h4>
     <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        Aperiam consequuntur repellat a illum consectetur? Laboriosam quod quidem ipsa hic consectetur maxime, deserunt,
-        accusamus ipsum natus perspiciatis doloremque enim minima expedita.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        Aperiam consequuntur repellat a illum consectetur? Laboriosam quod quidem ipsa hic consectetur maxime, deserunt,
-        accusamus ipsum natus perspiciatis doloremque enim minima expedita.
+
+
+        Pet adopts app serves people and pets from across the Fairfield city.You can see and upload dog,cat and small
+        pets .
+        you can sign up or log in  and upload pet to the website,find pet by gender, age, color, category and training
+        skill.
+
     </p>
 
     <section id="ctl00_cph_main_content_sctMain" class="">

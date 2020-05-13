@@ -32,8 +32,13 @@ public class LoginController extends HttpServlet {
         String userValidate = loginDao.authenticate(loginBeanDTO); //Calling authenticateUser function
 
         if (userValidate.equals("SUCCESS AUTHENTICATION")){
+<<<<<<< HEAD
             System.out.println("SSuccessfully logged in.....");
             request.setAttribute("firstNameUser", loginDao); // replaced userName
+=======
+            System.out.println("Successfully logged in.....");
+            request.setAttribute("firstNameUser", userName);
+>>>>>>> 2bf0fd5ba6a892fd0746f21c38c1a37927eff99a
             System.out.println("logged in....." + userName);
             request.getRequestDispatcher("/WEB-INF/views/home.jsp").forward(request, response);
         }
