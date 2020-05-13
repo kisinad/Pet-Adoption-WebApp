@@ -60,11 +60,22 @@
                            placeholder="Breed Type">
                 </span></div>
             <div class="col-md-4">
-                <span class="form-group">
-                    <label for="sex"><i class="fas fa-paw grey-text"></i> *Sex:</label>
-                    <input required type="text" class="form-control" id="sex" name="sexName"
-                           placeholder="Sex">
-                </span></div>
+                <div class="form-group">
+                    <label ><i class="fas fa-paw grey-text"></i> Gender</label>
+                    </div>
+<%--                    <input required type="text" class="form-control" id="sex" name="sexName"--%>
+<%--                           placeholder="Sex">-
+
+
+
+                <div>
+                    <input type="radio" id="male" name="sexName" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="sexName" value="female">
+                    <label for="female">Female</label>
+                </div>
+
+                </div>
 
 
 

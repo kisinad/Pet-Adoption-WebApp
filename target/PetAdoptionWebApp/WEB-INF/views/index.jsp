@@ -76,9 +76,9 @@
         <p class="lead mt-5">
             Find Pet
         </p>
-        <ul class="pet-list">
+        <ul class="pet-list" id="pet-body">
             <li>
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <img class="card-img-top" src="./images/cute-puppy.jpg" alt="Cute Puppy">
                     <div class="card-body">
                         <h5 class="card-title">Cute Puppy</h5>
@@ -205,15 +205,15 @@
                             </div>
                         </div>
                         <div class="modal-footer d-flex justify-content-center">
-                            <<<<<<< HEAD
+
                             <a href="" class="btn btn-success" data-toggle="modal"
                                data-target="#modalSuccess">Login</a>
                             <button class="btn" type="button">Sign up</button>
-                            =======
+
                             <a href="" class="btn btn-success" data-toggle="modal" data-target="#modalSuccess"
                                data-dismiss="modal">Sign up</a>
 
-                            >>>>>>> 64f48d8f6e5edc1ccb401855a132d9cc794a32d5
+
                         </div>
                     </form>
                 </div>
