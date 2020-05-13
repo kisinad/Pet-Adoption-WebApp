@@ -34,12 +34,9 @@ public class UserRegistrationController extends HttpServlet {
         String email = request.getParameter("email");
 
         UserDTO userDTO = new UserDTO(firstName, lastName, userName, password, email);
-<<<<<<< HEAD
         request.getSession(true).setAttribute("newUser", userDTO); //removed .getFirstName()
-=======
-        request.getSession(true).setAttribute("newUser", userDTO);
->>>>>>> 2bf0fd5ba6a892fd0746f21c38c1a37927eff99a
 
+        request.getSession(true).setAttribute("newUser", userDTO);
 
 
         //Ian's code
@@ -65,6 +62,7 @@ public class UserRegistrationController extends HttpServlet {
             request.getRequestDispatcher("/WEB-INF/views/signUpForm.jsp").forward(request, response);
 
         } else {
+            successMessage = "<span style='color:green;'>Successfully Registered. "+ userDTO.getFirstName() + "</span><br />";
             request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
         }
 
