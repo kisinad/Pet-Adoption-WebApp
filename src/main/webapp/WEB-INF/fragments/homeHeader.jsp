@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 <link rel="stylesheet" href="./css/style.css">
@@ -22,10 +23,11 @@
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <span class="navbar-text">
-                    Welcome,<c:out value="${UserDTO.firstName}"></c:out>
+                    Welcome, <c:out value="${newUser.firstName}"></c:out>, <c:out value="${firstNameUser.firstName}"></c:out>
+                    <c:out value="${firstNameUser.userName}"></c:out>
                   </span>
 
-                <a href="#" class="btn btn-primary btn-login"  data-toggle="modal" data-target="#modalLogOut">Login</a>
+                <a href="#" class="btn btn-primary btn-login"  data-toggle="modal" data-target="#modalLogOut">Log out</a>
                 <input class="form-control mr-sm-2" type="text" placeholder="Search">
                 <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
             </form>
