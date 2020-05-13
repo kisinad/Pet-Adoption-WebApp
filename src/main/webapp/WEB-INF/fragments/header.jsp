@@ -17,7 +17,7 @@
                     <a class="nav-link" href="./index">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./register-pet">Register Pet<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Register Pet<span class="sr-only">(current)</span></a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">

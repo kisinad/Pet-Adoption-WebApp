@@ -138,7 +138,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header text-center">
-                    <h4 class="modal-title w-100 font-weight-bold">Sign up</h4>
+                    <h4 class="modal-title w-100 font-weight-bold">Log Out</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -147,19 +147,19 @@
                     <form method="post" id="logOut" action="/index">
 
                         <div class="row">
-                            <div class="col-md-12">
-                                <h4>Log Out</h4>
+                            <div class="col-md-12 container">
                                 <p>Are you sure you want to log out</p>
                             </div>
                         </div>
                         <div class="modal-footer d-flex justify-content-center">
-                            <a href="" class="btn btn-alert" data-dismiss="modal">Log out</a>
+                            <a href="/index" class="btn btn-danger float-right" data-dismiss="modal">Log out</a>
+                            <a href="/home" class="btn btn-secondary float-left" data-dismiss="modal">Cancel</a>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-
+    </div>
         <%--    success pop-up--%>
         <div class="modal" tabindex="-1" role="dialog" id="modalSuccess">
             <div class="modal-dialog" role="document">

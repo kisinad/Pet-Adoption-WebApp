@@ -15,7 +15,7 @@
         <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="./index">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="./home">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./register-pet">Register Pet<span class="sr-only">(current)</span></a>
@@ -23,10 +23,9 @@
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <span class="navbar-text">
-                    Welcome, <c:out value="${newUser.firstName}"></c:out>, <c:out value="${firstNameUser.firstName}"></c:out>
-                    <c:out value="${firstNameUser.userName}"></c:out>
+                    Welcome, <c:out value="${firstNameUser}"></c:out>, <c:out value="${'firstNameUser'}"></c:out>
                   </span>
-
+                <span class="nav-item"><a class="nav-link" id="clock" href="#"></a></span>
                 <a href="#" class="btn btn-primary btn-login"  data-toggle="modal" data-target="#modalLogOut">Log out</a>
                 <input class="form-control mr-sm-2" type="text" placeholder="Search">
                 <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>

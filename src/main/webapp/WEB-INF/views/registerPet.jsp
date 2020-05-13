@@ -63,6 +63,14 @@
                 <div class="form-group">
                     <label ><i class="fas fa-paw grey-text"></i> Gender</label>
                     </div>
+
+                <div class="col-md-4">
+                <span class="form-group">
+                    <label for="date"><i ></i> </label>
+                    <input style="visibility: hidden" type="Date" class="form-control" id="date" name="dateName"
+                           value="LocalDate.now().format(DateTimeFormatter.ofPattern((EEEE, dd MMMM yyyy))">
+                </span>
+                </div>
 <%--                    <input required type="text" class="form-control" id="sex" name="sexName"--%>
 <%--                           placeholder="Sex">-
 
