@@ -17,12 +17,12 @@ public class LoginDAO {//DAO
         String userNameDB = "";
         String passwordDB =  "";
         String firstName = "";
+        String QUERY_DB_FOR_USER_SIGNIN = "select userName, password, firstName from PetWebAppUsers.users ";
 
         try {
             con = GetConnection.getConnection(); //Fetch database connection object
             statement = con.createStatement();//Statement is used to write queries.
-            resultSet = statement.executeQuery("select userName, password, firstName from PetWebAppUsers.users ");
-//            resultSet = statement.executeQuery("select userName, password from PetWebApp.users");//the table name is users and userName,password are columns. Fetching all the records and storing in a resultSet.
+            resultSet = statement.executeQuery(QUERY_DB_FOR_USER_SIGNIN);
 
             while (resultSet.next())//Until next row is present otherwise it return false
             {
@@ -34,18 +34,12 @@ public class LoginDAO {//DAO
                 holderUserDB.setUserName(userName);
                 holderUserDB.setPassword(passwordDB);
 
-
-                System.out.println("Name & Password in DB " + userName +": " + passwordDB);
-
                 if(loginBeanDTO.equals(holderUserDB) == true){
                     System.out.println("Successfully authenticated!!");
                     return "SUCCESS AUTHENTICATION";
 
                 }
-//                if (userName.equals(userNameDB)&&password.equals(passwordDB))
-//                {
-//                    return "SUCCESS AUTHENTIFICATION";////If the user entered values are already present in the database, which means user has already registered so return a SUCCESS message.
-//                }
+
             }
         } catch (SQLException e) {
             e.printStackTrace();

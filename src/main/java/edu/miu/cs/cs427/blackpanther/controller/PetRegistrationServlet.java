@@ -19,7 +19,6 @@ public class PetRegistrationServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String successMessage = "";
-
         String breedType = request.getParameter("breedType");
         String sex = request.getParameter("sexName");
         String color = request.getParameter("colorName");
@@ -27,7 +26,6 @@ public class PetRegistrationServlet extends HttpServlet {
         String weight = request.getParameter("weightName");
         String description = request.getParameter("descriptionName");
         String date = request.getParameter("dateName");
-
 
 
         PetDTO petDTO = new PetDTO( breedType, sex, color,type, weight, description, date);
