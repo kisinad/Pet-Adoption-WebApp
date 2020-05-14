@@ -1,5 +1,7 @@
 package edu.miu.cs.cs427.blackpanther.model;
 
+import java.util.Objects;
+
 public class UserDTO {
     private String firstName;
     private String lastName;
@@ -7,7 +9,11 @@ public class UserDTO {
     private String password;
     private String email;
 
-    public UserDTO() {
+    public UserDTO(){}
+
+    public UserDTO(String userName, String password) {
+        this.userName = userName;
+        this.password = password;
     }
 
     public UserDTO(String firstName, String lastName, String userName, String password, String email) {
@@ -56,6 +62,20 @@ public class UserDTO {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        UserDTO userDTO = (UserDTO) o;
+        return userName.equals(userDTO.userName) &&
+                password.equals(userDTO.password);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(userName, password);
     }
 
     @Override

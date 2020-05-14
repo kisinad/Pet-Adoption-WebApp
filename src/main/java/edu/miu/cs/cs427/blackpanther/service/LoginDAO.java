@@ -1,14 +1,14 @@
 package edu.miu.cs.cs427.blackpanther.service;
 
-import edu.miu.cs.cs427.blackpanther.model.LoginBeanDTO;
+import edu.miu.cs.cs427.blackpanther.model.UserDTO;
 
 import java.sql.*;
 
 public class LoginDAO {//DAO
 
-    public String authenticate(LoginBeanDTO loginBeanDTO){
-        String userName = loginBeanDTO.getUserName();
-        String password = loginBeanDTO.getPassword();
+    public String authenticate(UserDTO userDTO){
+        String userName = userDTO.getUserName();
+        String password = userDTO.getPassword();
 
         Connection con = null;
         Statement statement = null;
@@ -30,11 +30,11 @@ public class LoginDAO {//DAO
                 passwordDB = resultSet.getString("password");
                 firstName = resultSet.getString("firstName");
 
-                LoginBeanDTO holderUserDB = new LoginBeanDTO();
+                UserDTO holderUserDB = new UserDTO();
                 holderUserDB.setUserName(userName);
                 holderUserDB.setPassword(passwordDB);
 
-                if(loginBeanDTO.equals(holderUserDB) == true){
+                if(userDTO.equals(holderUserDB) == true){
                     System.out.println("Successfully authenticated!!");
                     return "SUCCESS AUTHENTICATION";
 

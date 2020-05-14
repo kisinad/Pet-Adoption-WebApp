@@ -1,8 +1,9 @@
 package edu.miu.cs.cs427.blackpanther.controller;
 
-import edu.miu.cs.cs427.blackpanther.model.LoginBeanDTO;
+import edu.miu.cs.cs427.blackpanther.model.UserDTO;
 import edu.miu.cs.cs427.blackpanther.service.LoginDAO;
 import edu.miu.cs.cs427.blackpanther.service.PetsDAO;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -18,20 +19,16 @@ public class LoginController extends HttpServlet {
         String userName = request.getParameter("loginUserName");
         String password = request.getParameter("loginpassword");
 
-        LoginBeanDTO loginBeanDTO = new LoginBeanDTO(); //creating object for LoginBean class.
+        UserDTO userDTO = new UserDTO(); //creating object for LoginBean class.
 
-        loginBeanDTO.setUserName(userName); //setting the username and password through the loginBean object then only you can get it in future.
-        loginBeanDTO.setPassword(password);
+        userDTO.setUserName(userName); //setting the username and password through the loginBean object then only you can get it in future.
+        userDTO.setPassword(password);
 
         LoginDAO loginDao = new LoginDAO(); //creating object for LoginDao. This class contains main logic of
-        // the
-        // application.
 
-        String userValidate = loginDao.authenticate(loginBeanDTO); //Calling authenticateUser function
+        String userValidate = loginDao.authenticate(userDTO); //Calling authenticateUser function
 
         if (userValidate.equals("SUCCESS AUTHENTICATION")){
-//            System.out.println("SSuccessfully logged in.....");
-//            request.setAttribute("firstNameUser", loginDao); // replaced userName
 
             System.out.println("Successfully logged in.....");
             request.getSession().setAttribute("firstNameUser", userName);

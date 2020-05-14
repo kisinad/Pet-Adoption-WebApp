@@ -1,5 +1,7 @@
 package edu.miu.cs.cs427.blackpanther.model;
 
+import java.util.Objects;
+
 public class PetDTO {
 
     private Integer petID;
@@ -102,6 +104,19 @@ public class PetDTO {
 
     public String getDate() {
         return date;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        PetDTO petDTO = (PetDTO) o;
+        return petID.equals(petDTO.petID);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(petID);
     }
 
     public void setDate(String date) {
