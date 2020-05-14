@@ -1,10 +1,7 @@
 package edu.miu.cs.cs427.blackpanther.controller;
 
-
-
 import edu.miu.cs.cs427.blackpanther.model.UserDTO;
 import edu.miu.cs.cs427.blackpanther.service.UserRegistrationService;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

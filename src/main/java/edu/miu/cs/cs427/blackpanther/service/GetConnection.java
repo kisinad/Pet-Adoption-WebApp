@@ -5,12 +5,14 @@ import java.sql.DriverManager;
 public class GetConnection {
     // create a function to connect with mysql database
     public static Connection getConnection(){
-
+        String url = "jdbc:mysql://petadoptionwebapp.cj8knql7p2wt.us-east-2.rds.amazonaws.com:3306/PetWebAppUsers";
+        String user = "AWSRDS";
+        String password = "Password123";
         Connection con = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://petadoptionwebapp.cj8knql7p2wt.us-east-2.rds.amazonaws.com:3306/PetWebAppUsers", "AWSRDS", "Password123");
-//            con = DriverManager.getConnection("jdbc:mysql://localhost/PetWebApp", "root", "");
+            con = DriverManager.getConnection(url, user, password);
+
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
@@ -18,5 +20,3 @@ public class GetConnection {
         return con;
     }
 }
-//    Connection connection = DriverManager.getConnection("jdbc:mysql://petadoptionwebapp.cj8knql7p2wt.us-east-2.rds.amazonaws.com:3306/PetWebAppUsers", "AWSRDS", "Password123");
-////        try(Connection connection = DriverManager.getConnection("jdbc:mysql:///PetWebApp?useSSL=false", "root", "");

@@ -4,3 +4,7 @@ target/
 ServiceAccount.json
 target
 .gitignore
+./
+.idea
+ServiceAccount.json
+target

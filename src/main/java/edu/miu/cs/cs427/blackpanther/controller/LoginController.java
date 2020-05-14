@@ -3,10 +3,7 @@ package edu.miu.cs.cs427.blackpanther.controller;
 import edu.miu.cs.cs427.blackpanther.model.LoginBeanDTO;
 import edu.miu.cs.cs427.blackpanther.service.LoginDAO;
 import edu.miu.cs.cs427.blackpanther.service.PetsDAO;
-
-
 import javax.servlet.RequestDispatcher;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;

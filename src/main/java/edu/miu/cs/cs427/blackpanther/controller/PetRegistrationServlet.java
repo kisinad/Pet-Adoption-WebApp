@@ -18,21 +18,14 @@ public class PetRegistrationServlet extends HttpServlet {
     PetRegistrationService petObj = new PetRegistrationService();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        System.out.println("Pet Registration hit....");
-
         String successMessage = "";
-        System.out.println("About to reach what was  that is this ...." );
 
-        System.out.println(request.getParameter("animalName"));
-//
         String breedType = request.getParameter("breedType");
         String sex = request.getParameter("sexName");
         String color = request.getParameter("colorName");
         String type = request.getParameter("typeName");
         String weight = request.getParameter("weightName");
-//        String image = request.getParameter("imageName");
         String description = request.getParameter("descriptionName");
-//        String date = request.getParameter("dateName");
         String date = request.getParameter("dateName");
 
 

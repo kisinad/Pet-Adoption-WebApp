@@ -10,6 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Final Exam" target="1.7" />
       <module name="Pet-Adoption-WebApp" target="1.8" />
     </bytecodeTargetLevel>
   </component>
