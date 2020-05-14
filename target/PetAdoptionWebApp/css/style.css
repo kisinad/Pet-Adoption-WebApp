@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 50px;
+    background-color: white !important;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #f5f5f5;
+    text-align: left;
+}
+#footer-content {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+h3 {
+    margin-top: 2rem;
+}
+
+.text_green{
+    color: #80B140;
+}
+.btn-clean{
+    background: none;
+    color: #652D88;
+    line-height: 1.1em;
+    font-weight: 600;
+    font-size: .8rem;
+    margin: 0 .25em 0 0;
+    padding: .5em .875em;
+    cursor: pointer;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    border: 1px solid #652D88;
+    text-transform: uppercase;
+    text-decoration: none !important;
+}
+.pet_filter {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1px;
+    margin-top: -1px;
+    margin-bottom: 2em;
+}
+.pet_filter li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.pet_filter li a span {
+    display: inline-block;
+}
+.pet_filter li {
+    flex: 1 0 25%;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    white-space: nowrap;
+    border: 1px solid #ccc;
+}
+.pet_filter li a.active {
+    background: whitesmoke;
+    color: #4a4a4a;
+}
+.popover_parent {
+    position: relative;
+}
+.carousel-inner{
+    height: 500px;
+}
+p+div, p+fieldset {
+    margin-top: 1.5em;
+}
+.popover_selects {
+    margin-bottom: 1.5em;
+}
+.popover_parent {
+    position: relative;
+}
+.pet_filter li a img {
+    width: 70px;
+    margin-right: 10px;
+}
+ a:link img, a:visited img {
+     border-style: none;
+ }
+
+ .btn-signup, .btn-login{
+     margin: 10px;
+ }
+ .pet-list{
+     list-style: none;
+     display: inline-flex;
+ }
+ .pet-list li{
+     padding: 10px;
+ }
+ .padding-t10{
+     padding-top: 10px;
+     margin-top: 20px;
+ }
+ .card-pet{
+     width: 18rem;
+ }
