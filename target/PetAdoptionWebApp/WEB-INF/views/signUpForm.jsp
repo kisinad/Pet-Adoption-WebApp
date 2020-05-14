@@ -9,7 +9,7 @@
           integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/fontawesome/css/all.css">
     <link rel="stylesheet" href="./css/style.css">
-    <script defer src="./js/app.js"></script>
+<%--    <script defer src="./js/app.js"></script>--%>
 </head>
 <body>
 <%-- the header fragment--%>

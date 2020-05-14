@@ -31,17 +31,18 @@ public class PetRegistrationServlet extends HttpServlet {
         PetDTO petDTO = new PetDTO( breedType, sex, color,type, weight, description, date);
 
 
-        request.getSession(true).setAttribute("newPet", petDTO);
+        request.setAttribute("newPet", petDTO);
         int writeResult = petObj.registerPet(petDTO);
 
         if(writeResult == 1){
             successMessage = "<span style='color:green;'>Pet Successfully Posted.</span><br />";
             request.setAttribute("successMessage", successMessage);
-            request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
+            request.getRequestDispatcher("/WEB-INF/views/registerPet.jsp").forward(request, response);
         }
         else {
             successMessage = "<span style='color:red;'>Registration Failed.</span><br />";
-            request.getRequestDispatcher("WEB-INF/views/signUpForm.jsp").forward(request, response);
+            request.setAttribute("successMessage", successMessage);
+            request.getRequestDispatcher("WEB-INF/views/registerPet.jsp").forward(request, response);
         }
 
     }
