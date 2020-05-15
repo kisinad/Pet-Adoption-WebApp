@@ -19,10 +19,10 @@ public class DeletePetFromDBController extends HttpServlet {
 
         HttpSession session = request.getSession(true);
         if(result == true){
-            session.setAttribute("deleted", "Deleted Successfully");
+            session.setAttribute("deleted", "<span style='color:green;'>Deleted Successfully!</span><br />");
         }
         else {
-            session.setAttribute("failed", "Failed to delete");
+            session.setAttribute("failed", "<span style='color:red;'>Failed to delete!</span><br /> ");
         }
         response.sendRedirect("viewPets");
     }
