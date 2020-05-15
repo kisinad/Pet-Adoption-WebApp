@@ -36,7 +36,7 @@ public class LoginController extends HttpServlet {
             System.out.println("logged in....." + userName);
 
             PetsDAO petsDAO = new PetsDAO();
-
+            request.setAttribute("errorMessage", "Invalid user or password");
             session.setAttribute("pets", petsDAO.getAllPets());
 //            request.getRequestDispatcher("/WEB-INF/views/viewPets.jsp").forward(request, response);
 
@@ -50,7 +50,7 @@ public class LoginController extends HttpServlet {
             request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
 
             //ian's
-            request.setAttribute("errorMessage", "Invalid user or password");
+
         }
 
     }
