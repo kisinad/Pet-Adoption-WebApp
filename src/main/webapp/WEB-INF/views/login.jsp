@@ -13,6 +13,7 @@
 <%-- the header fragment--%>
 <%@include file="../fragments/headerIndex.jsp" %>
 <div class="container jumbotron padding-t10 col-md-6">
+    ${errorMessage}
     <form method="post" id="login-form" action="/PetAdoptionWebApp/login">
         <%
             if(null!=request.getAttribute("errorMessage"))
