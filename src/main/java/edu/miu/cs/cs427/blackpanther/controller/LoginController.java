@@ -10,6 +10,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 @WebServlet(name = "LoginServlet", urlPatterns = {"/login"})
@@ -29,22 +30,23 @@ public class LoginController extends HttpServlet {
         String userValidate = loginDao.authenticate(userDTO); //Calling authenticateUser function
 
         if (userValidate.equals("SUCCESS AUTHENTICATION")){
-
+            HttpSession session = request.getSession(true);
             System.out.println("Successfully logged in.....");
-            request.getSession().setAttribute("firstNameUser", userName);
+            session.setAttribute("firstNameUser", userName);
             System.out.println("logged in....." + userName);
 
             PetsDAO petsDAO = new PetsDAO();
-            request.setAttribute("pets", petsDAO.getAllPets());
-            request.getRequestDispatcher("/WEB-INF/views/viewPets.jsp").forward(request, response);
 
-            //response.sendRedirect("viewPets");
+            session.setAttribute("pets", petsDAO.getAllPets());
+//            request.getRequestDispatcher("/WEB-INF/views/viewPets.jsp").forward(request, response);
+
+            response.sendRedirect("viewPets");
             //request.getRequestDispatcher("/WEB-INF/views/viewPets.jsp").forward(request, response);
         }
         else
         {
             System.out.println("User Name and password do not exist in db.....");
-            request.setAttribute("errMessage", userValidate);//If authenticate() function returns other than SUCCESS string it will be sent to Login page again. Here the error message returned from function has been stored in a errMessage key.
+            request.setAttribute("errMessage", userValidate);
             request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
 
             //ian's

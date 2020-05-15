@@ -17,6 +17,10 @@ public class PetDTO {
     public PetDTO() {
     }
 
+    public PetDTO(Integer petID) {
+        this.petID = petID;
+    }
+
     public PetDTO(Integer petID, String type, String breed, String sex, String color, String weight, String description, String date) {
         this.petID = petID;
         this.type = type;

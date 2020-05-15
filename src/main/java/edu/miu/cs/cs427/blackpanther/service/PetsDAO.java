@@ -11,18 +11,18 @@ import java.util.List;
 
 public class PetsDAO {//DAO
 
-    public List<PetDTO> getAllPets(){
+    private Connection con = null;
+    private Statement statement = null;
+    private ResultSet resultSet = null;
 
+    public List<PetDTO> getAllPets() {
 
-        Connection con = null;
-        Statement statement = null;
-        ResultSet resultSet = null;
         List<PetDTO> petsList = new ArrayList<>();
 
         try {
             con = GetConnection.getConnection(); //Fetch database connection object
             statement = con.createStatement();//Statement is used to write queries.
-            resultSet = statement.executeQuery("select idpet, type, breed, sex, color, weight, description, datePosted from PetWebAppUsers.pets ");
+            resultSet = statement.executeQuery("select idpet, type, breed, sex, color, weight, description, datePosted from PetWebAppUsers.pets; ");
 
 
             while (resultSet.next())//Until next row is present otherwise it return false
@@ -44,5 +44,23 @@ public class PetsDAO {//DAO
         }
 
         return petsList;
+    }
+
+    public boolean deletePetFromDB(int petID) {
+        int rest = 0;
+        String DELETE_PET_FROM_DB = "DELETE FROM PetWebAppUsers.pets WHERE idpet = " + petID;
+
+        try {
+            con = GetConnection.getConnection();
+            statement = con.createStatement();
+            rest = statement.executeUpdate(DELETE_PET_FROM_DB);
+            if(rest == 1){
+                return true;
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
     }
 }
