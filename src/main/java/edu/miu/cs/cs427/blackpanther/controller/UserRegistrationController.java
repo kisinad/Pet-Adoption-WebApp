@@ -68,6 +68,8 @@ public class UserRegistrationController extends HttpServlet {
 
 
         } else {
+            UserRegistrationService userRegistrationService = new UserRegistrationService();
+            userRegistrationService.registerUser(userDTO);
             successMessage = "<p style='color:green;text-align:center;'>Successfully Registered. "+ userDTO.getFirstName() + "</p><br />";
             request.setAttribute("success", successMessage);
         }
