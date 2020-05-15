@@ -6,7 +6,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login Form</title>
+    <title>View Pets</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/fontawesome/css/all.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -32,10 +32,9 @@
                         <p class="card-text">Color: ${pet.color}</p>
                         <p class="card-text">Weight: ${pet.weight}</p>
                         <small class="text-muted">Date Post: ${pet.date}</small>
-                        <p>${pet.description}</p>
+                        <p>Description :${pet.description}</p>
 <%--                        <input  type="text" value="${pet.petID}" name="petName" style="display: none">--%>
-                        <a href="./delete?petName=${pet.petID}" class="btn btn-danger btn-block">Delete your post.</a>
-                        <a href="https://codepen.io/collection/XdWJOQ/" class="btn btn-primary btn-block">Read more..</a>
+                        <a href="./delete?petName=${pet.petID}" class="btn btn-danger btn-block">Delete Pet.</a>
                     </div>
                 </article>
             </c:forEach>

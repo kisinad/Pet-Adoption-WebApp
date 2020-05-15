@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login Form</title>
+    <title>Register Form</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
           integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/fontawesome/css/all.css">
@@ -39,10 +39,10 @@
                     <div class="col-sm-6">
                         <label><i class="fas fa-paw grey-text"></i> *Gender:</label><br>
                         <label class="radio-inline">
-                            <input required type="radio" name="sexName" value="male">Male
+                            <input required type="radio" name="sexName" value="male"> Male
                         </label>
                         <label class="radio-inline">
-                            <input required type="radio" name="sexName" value="female">Female
+                            <input required type="radio" name="sexName" value="female"> Female
                         </label>
                     </div>
 

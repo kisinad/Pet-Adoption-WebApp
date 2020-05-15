@@ -1,6 +1,7 @@
-package edu.miu.cs.cs427.blackpanther.service;
+package edu.miu.cs.cs427.blackpanther.repository;
 
 import edu.miu.cs.cs427.blackpanther.model.UserDTO;
+import edu.miu.cs.cs427.blackpanther.util.GetConnection;
 
 import java.sql.*;
 

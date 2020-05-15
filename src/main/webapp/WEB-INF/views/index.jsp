@@ -12,7 +12,7 @@
 <body>
 <%-- the header fragment--%>
 <%@include file="../fragments/headerIndex.jsp" %>
-<div id="imagesCarousel" class="carousel slide" data-ride="carousel">
+<div id="imagesCarousel" class="carousel slide d-flex p-2 justify-content-center" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#imagesCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#imagesCarousel" data-slide-to="1"></li>

@@ -1,6 +1,6 @@
 package edu.miu.cs.cs427.blackpanther.controller;
 
-import edu.miu.cs.cs427.blackpanther.service.PetsDAO;
+import edu.miu.cs.cs427.blackpanther.repository.PetsDAO;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -18,6 +18,15 @@ public class ViewPetsController extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         PetsDAO petsDAO = new PetsDAO();
+        if (request.getSession().getAttribute("deleted") != null) {
+            request.setAttribute("deleted", request.getSession().getAttribute("deleted"));
+            request.getSession().setAttribute("deleted", "");
+        }
+
+        if (request.getSession().getAttribute("failed") != null) {
+            request.setAttribute("failed", request.getSession().getAttribute("failed"));
+            request.getSession().setAttribute("failed", "");
+        }
         request.setAttribute("pets", petsDAO.getAllPets());
         request.getRequestDispatcher("/WEB-INF/views/viewPets.jsp").forward(request, response);
     }

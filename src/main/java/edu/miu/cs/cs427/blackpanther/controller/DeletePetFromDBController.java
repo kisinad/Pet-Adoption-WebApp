@@ -1,6 +1,6 @@
 package edu.miu.cs.cs427.blackpanther.controller;
 
-import edu.miu.cs.cs427.blackpanther.service.PetsDAO;
+import edu.miu.cs.cs427.blackpanther.repository.PetsDAO;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

@@ -1,4 +1,4 @@
-package edu.miu.cs.cs427.blackpanther.service;
+package edu.miu.cs.cs427.blackpanther.util;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
